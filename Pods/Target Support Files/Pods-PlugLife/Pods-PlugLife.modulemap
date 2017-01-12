@@ -1,0 +1,6 @@
+framework module Pods_PlugLife {
+  umbrella header "Pods-PlugLife-umbrella.h"
+
+  export *
+  module * { export * }
+}
