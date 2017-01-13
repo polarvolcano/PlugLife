@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class CountryDetailVC: UIViewController,UIWebViewDelegate {
     var country: Country!
@@ -15,6 +16,12 @@ class CountryDetailVC: UIViewController,UIWebViewDelegate {
     
     @IBOutlet weak var plugImg: UIImageView!
     override func viewDidLoad() {
+        
+        
+        country.currencyConvert {
+            print("Arrived here")
+            self.updateUI()
+        }
         super.viewDidLoad()
         nameLbl.text = country.name
         let img = UIImage(named: "\(country.isoCode.lowercased())")
@@ -31,6 +38,10 @@ class CountryDetailVC: UIViewController,UIWebViewDelegate {
 
         // Do any additional setup after loading the view.
     }
+    
+    func updateUI() {
+        
+    }
 
 
     @IBAction func btnPress(_ sender: UIButton) {
@@ -43,6 +54,7 @@ class CountryDetailVC: UIViewController,UIWebViewDelegate {
         
         let img = UIImage(named: "\(plug)_3d_plug_m")
         let imgview = UIImageView(image: img)
+        imgview.contentMode = UIViewContentMode.scaleAspectFit
         //let webView = UIWebView()
         //webView.delegate = self
         
@@ -50,4 +62,6 @@ class CountryDetailVC: UIViewController,UIWebViewDelegate {
         
    
     }
+    
+    
 }

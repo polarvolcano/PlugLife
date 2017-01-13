@@ -8,7 +8,6 @@
 
 import Foundation
 
-let URL_BASE = "https://pokeapi.co/"
-let URL_POKEMON = "api/v1/pokemon/"
+let URL_BASE = "http://free.currencyconverterapi.com/api/v3/convert?q="
 
 typealias DownloadComplete = () -> ()

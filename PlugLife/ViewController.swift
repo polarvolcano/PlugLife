@@ -43,9 +43,11 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
                 let name = row["name"]!
                 let isoCode = row["ISO3166-1-Alpha-2"]!
                 let plugType = row["Plug_Types"]!
+                let currencyCode = row["ISO4217-currency_alphabetic_code"]!
+                let currencyName = row["ISO4217-currency_name"]!
                 print(isoCode)
                 
-                let country = Country(name: name, isoCode: isoCode, plugType: plugType)
+                let country = Country(name: name, isoCode: isoCode, plugType: plugType, currencyCode: currencyCode, currencyName: currencyName)
                 countries.append(country)
             }
         } catch let err as NSError {

@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -114,23 +115,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FEc-Ox-EeN">
-                                <rect key="frame" x="161" y="107" width="198" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FEc-Ox-EeN">
+                                <rect key="frame" x="84" y="105" width="255" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="255" id="5PG-gv-xRc"/>
+                                    <constraint firstAttribute="height" constant="38" id="zKX-a9-NKW"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hxp-eb-a9h">
-                                <rect key="frame" x="237" y="24" width="122" height="75"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <stackView opaque="NO" contentMode="scaleAspectFit" restorationIdentifier="stackView" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="0Fx-US-LX2">
-                                <rect key="frame" x="0.0" y="234" width="375" height="200"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Hxp-eb-a9h">
+                                <rect key="frame" x="239" y="30" width="100" height="67"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="8w3-I6-i0O"/>
+                                    <constraint firstAttribute="width" constant="100" id="d6B-6R-wQy"/>
+                                    <constraint firstAttribute="height" constant="67" id="p55-Us-PWH"/>
                                 </constraints>
-                            </stackView>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DcK-rw-gAz">
                                 <rect key="frame" x="36" y="537" width="80" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -139,12 +140,24 @@
                                     <action selector="btnPress:" destination="8nE-et-EWq" eventType="touchUpInside" id="trh-nW-ZuZ"/>
                                 </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" restorationIdentifier="stackView" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="0Fx-US-LX2">
+                                <rect key="frame" x="0.0" y="163" width="375" height="150"/>
+                                <color key="backgroundColor" red="0.76061242628396541" green="0.7681432423857868" blue="0.7681432423857868" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="8w3-I6-i0O"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="0Fx-US-LX2" secondAttribute="trailing" id="12J-37-6VJ"/>
                             <constraint firstItem="0Fx-US-LX2" firstAttribute="leading" secondItem="68w-A6-Hyn" secondAttribute="leading" id="B6F-iH-egL"/>
-                            <constraint firstItem="0Fx-US-LX2" firstAttribute="centerY" secondItem="68w-A6-Hyn" secondAttribute="centerY" id="paT-eu-bPg"/>
+                            <constraint firstItem="FEc-Ox-EeN" firstAttribute="top" secondItem="Hxp-eb-a9h" secondAttribute="bottom" constant="8" id="E71-Ub-WOS"/>
+                            <constraint firstItem="Hxp-eb-a9h" firstAttribute="top" secondItem="K4b-U5-dtL" secondAttribute="bottom" constant="10" id="gmz-X0-If5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Hxp-eb-a9h" secondAttribute="trailing" constant="20" id="n5H-ci-nqz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="FEc-Ox-EeN" secondAttribute="trailing" constant="20" id="n5x-rl-sl5"/>
+                            <constraint firstItem="FEc-Ox-EeN" firstAttribute="top" secondItem="Hxp-eb-a9h" secondAttribute="bottom" constant="8" id="oqt-2k-aht"/>
+                            <constraint firstItem="0Fx-US-LX2" firstAttribute="top" secondItem="FEc-Ox-EeN" secondAttribute="bottom" constant="20" id="qdQ-3A-0IR"/>
                         </constraints>
                     </view>
                     <connections>
