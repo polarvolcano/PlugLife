@@ -43,6 +43,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
                 let name = row["name"]!
                 let isoCode = row["ISO3166-1-Alpha-2"]!
                 let plugType = row["Plug_Types"]!
+                print(isoCode)
                 
                 let country = Country(name: name, isoCode: isoCode, plugType: plugType)
                 countries.append(country)

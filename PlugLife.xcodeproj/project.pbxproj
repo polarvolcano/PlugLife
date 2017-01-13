@@ -19,6 +19,7 @@
 		E2438AF61E27421100652EB0 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2438AF51E27421100652EB0 /* Country.swift */; };
 		E2438AF81E27472B00652EB0 /* CountryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2438AF71E27472B00652EB0 /* CountryCell.swift */; };
 		E2438AFC1E2755EA00652EB0 /* CountryDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2438AFB1E2755EA00652EB0 /* CountryDetailVC.swift */; };
+		E2B834231E2895FA0003A08D /* Plug.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B834221E2895FA0003A08D /* Plug.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		E2438AF51E27421100652EB0 /* Country.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 		E2438AF71E27472B00652EB0 /* CountryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryCell.swift; sourceTree = "<group>"; };
 		E2438AFB1E2755EA00652EB0 /* CountryDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryDetailVC.swift; sourceTree = "<group>"; };
+		E2B834221E2895FA0003A08D /* Plug.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plug.swift; sourceTree = "<group>"; };
 		FBBEB0DCEC119F8FF6130847 /* Pods_PlugLife.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlugLife.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -108,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				E2438AF51E27421100652EB0 /* Country.swift */,
+				E2B834221E2895FA0003A08D /* Plug.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 					E2438AD61E273E6100652EB0 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = VHG46T8GSP;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -277,6 +281,7 @@
 				E2438AF81E27472B00652EB0 /* CountryCell.swift in Sources */,
 				E2438ADB1E273E6100652EB0 /* AppDelegate.swift in Sources */,
 				E2438AF61E27421100652EB0 /* Country.swift in Sources */,
+				E2B834231E2895FA0003A08D /* Plug.swift in Sources */,
 				E2438AF41E273F8300652EB0 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
