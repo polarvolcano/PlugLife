@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		80773F0137BC80E18B827E36 /* Pods_PlugLife.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBBEB0DCEC119F8FF6130847 /* Pods_PlugLife.framework */; };
+		E20005731E27647E006CA704 /* country-codes.csv in Resources */ = {isa = PBXBuildFile; fileRef = E20005721E27647E006CA704 /* country-codes.csv */; };
 		E2438ADB1E273E6100652EB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2438ADA1E273E6100652EB0 /* AppDelegate.swift */; };
 		E2438ADD1E273E6100652EB0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2438ADC1E273E6100652EB0 /* ViewController.swift */; };
 		E2438AE01E273E6100652EB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2438ADE1E273E6100652EB0 /* Main.storyboard */; };
@@ -17,13 +18,13 @@
 		E2438AF41E273F8300652EB0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2438AF31E273F8300652EB0 /* Constants.swift */; };
 		E2438AF61E27421100652EB0 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2438AF51E27421100652EB0 /* Country.swift */; };
 		E2438AF81E27472B00652EB0 /* CountryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2438AF71E27472B00652EB0 /* CountryCell.swift */; };
-		E2438AFA1E274DC100652EB0 /* country-codes.csv in Resources */ = {isa = PBXBuildFile; fileRef = E2438AF91E274DC100652EB0 /* country-codes.csv */; };
 		E2438AFC1E2755EA00652EB0 /* CountryDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2438AFB1E2755EA00652EB0 /* CountryDetailVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0195973246849CBB2D7C3419 /* Pods-PlugLife.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlugLife.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PlugLife/Pods-PlugLife.debug.xcconfig"; sourceTree = "<group>"; };
 		7CD43CF1246324F6B407527C /* Pods-PlugLife.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlugLife.release.xcconfig"; path = "Pods/Target Support Files/Pods-PlugLife/Pods-PlugLife.release.xcconfig"; sourceTree = "<group>"; };
+		E20005721E27647E006CA704 /* country-codes.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "country-codes.csv"; sourceTree = "<group>"; };
 		E2438AD71E273E6100652EB0 /* PlugLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlugLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2438ADA1E273E6100652EB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2438ADC1E273E6100652EB0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,7 +36,6 @@
 		E2438AF31E273F8300652EB0 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		E2438AF51E27421100652EB0 /* Country.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 		E2438AF71E27472B00652EB0 /* CountryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryCell.swift; sourceTree = "<group>"; };
-		E2438AF91E274DC100652EB0 /* country-codes.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "country-codes.csv"; sourceTree = "<group>"; };
 		E2438AFB1E2755EA00652EB0 /* CountryDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryDetailVC.swift; sourceTree = "<group>"; };
 		FBBEB0DCEC119F8FF6130847 /* Pods_PlugLife.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlugLife.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -132,7 +132,7 @@
 		E2438AF01E273F6100652EB0 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				E2438AF91E274DC100652EB0 /* country-codes.csv */,
+				E20005721E27647E006CA704 /* country-codes.csv */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -211,7 +211,7 @@
 			files = (
 				E2438AE51E273E6100652EB0 /* LaunchScreen.storyboard in Resources */,
 				E2438AE21E273E6100652EB0 /* Assets.xcassets in Resources */,
-				E2438AFA1E274DC100652EB0 /* country-codes.csv in Resources */,
+				E20005731E27647E006CA704 /* country-codes.csv in Resources */,
 				E2438AE01E273E6100652EB0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -19,7 +19,7 @@ class CountryCell: UICollectionViewCell {
         self.country = country
         
         nameLlb.text = self.country.name.capitalized
-        flag.image = UIImage(named: "\(self.country.isoCode)")
+        flag.image = UIImage(named: "\(self.country.isoCode.lowercased())")
     }
     
 }

@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UISearchBarDelegate {
     
     @IBOutlet weak var collection: UICollectionView!
@@ -41,7 +42,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             for row in rows {
                 let name = row["name"]!
                 let isoCode = row["ISO3166-1-Alpha-2"]!
-                let plugType = "Plug_Type"
+                let plugType = row["Plug_Types"]!
                 
                 let country = Country(name: name, isoCode: isoCode, plugType: plugType)
                 countries.append(country)
