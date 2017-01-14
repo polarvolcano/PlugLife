@@ -17,7 +17,7 @@ class CountryCell: UICollectionViewCell {
     
     func configureCell(country: Country) {
         self.country = country
-        
+    
         nameLlb.text = self.country.name.capitalized
         flag.image = UIImage(named: "\(self.country.isoCode.lowercased())")
     }

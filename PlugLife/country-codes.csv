@@ -1,6 +1,6 @@
 name,official_name_en,official_name_fr,ISO3166-1-Alpha-2,ISO3166-1-Alpha-3,ISO3166-1-numeric,ITU,MARC,WMO,DS,Dial,FIFA,FIPS,GAUL,IOC,ISO4217-currency_alphabetic_code,ISO4217-currency_country_name,ISO4217-currency_minor_unit,ISO4217-currency_name,ISO4217-currency_numeric_code,is_independent,Capital,Continent,TLD,Languages,geonameid,EDGAR,Plug_Types,Voltage,Freq
 Afghanistan,Afghanistan,Afghanistan,AF,AFG,4,AFG,af,AF,AFG,93,AFG,AF,1,AFG,AFN,AFGHANISTAN,2,Afghani,971,Yes,Kabul,AS,.af,fa-AF/ps/uz-AF/tk,1149361,B2,C/F,220 V,50 Hz
-Albania,Albania,Albanie,AL,ALB,8,ALB,aa,AB,AL,355,ALB,AL,3,ALB,ALL,ALBANIA,2,Lek,8,Yes,Tirana,EU,.al,sq/el,783754,B3,C/F,220 V,50 Hz
+Albania,Albania,Albanie,AL,ALB,8,ALB,aa,AB,AL,355,ALB,AL,3,ALB,ALL,ALBANIA,2,Lek,8,Yes,Tirana,EU,.al,sqi,783754,B3,C/F,220 V,50 Hz
 Algeria,Algeria,Algérie,DZ,DZA,12,ALG,ae,AL,DZ,213,ALG,AG,4,ALG,DZD,ALGERIA,2,Algerian Dinar,12,Yes,Algiers,AF,.dz,ar-DZ,2589581,B4,C/F,220 V,50 Hz
 American Samoa,American Samoa,Samoa américaines,AS,ASM,16,SMA,as,,USA,1-684,ASA,AQ,5,ASA,USD,AMERICAN SAMOA,2,US Dollar,840,Territory of US,Pago Pago,OC,.as,en-AS/sm/to,5880801,B5,A/B/F/I,120 V,60 Hz
 Andorra,Andorra,Andorre,AD,AND,20,AND,an,,AND,376,AND,AN,7,AND,EUR,ANDORRA,2,Euro,978,Yes,Andorra la Vella,EU,.ad,ca,3041565,B6,C/F,230 V,60 Hz

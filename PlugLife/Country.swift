@@ -42,6 +42,13 @@ class Country {
     var currencyName: String {
         return _currencyName
     }
+    var xchangeRate: Double {
+        return _xchangeRate
+    }
+    
+    var basexchangeRate: Double {
+        return _basexchangeRate
+    }
     
     init(name: String, isoCode: String, plugType: String, currencyCode: String, currencyName: String) {
         self._name = name
@@ -54,7 +61,7 @@ class Country {
         
         //self._language = language
     //    let langCode = self._language.components(separatedBy: "/")
-    //    self._locale = Locale(identifier: langCode[0])
+       // self._locale = Locale(identifier: self._language)
         
     }
     

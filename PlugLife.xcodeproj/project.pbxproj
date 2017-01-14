@@ -19,6 +19,7 @@
 		E2438AF81E27472B00652EB0 /* CountryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2438AF71E27472B00652EB0 /* CountryCell.swift */; };
 		E2438AFC1E2755EA00652EB0 /* CountryDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2438AFB1E2755EA00652EB0 /* CountryDetailVC.swift */; };
 		E2A550071E29CC25001B65D1 /* country-codes.csv in Resources */ = {isa = PBXBuildFile; fileRef = E2A550061E29CC25001B65D1 /* country-codes.csv */; };
+		E2A9E1FB1E29F74D00B5521C /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A9E1FA1E29F74D00B5521C /* PopUpViewController.swift */; };
 		E2B834231E2895FA0003A08D /* Plug.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B834221E2895FA0003A08D /* Plug.swift */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +39,7 @@
 		E2438AF71E27472B00652EB0 /* CountryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryCell.swift; sourceTree = "<group>"; };
 		E2438AFB1E2755EA00652EB0 /* CountryDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryDetailVC.swift; sourceTree = "<group>"; };
 		E2A550061E29CC25001B65D1 /* country-codes.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "country-codes.csv"; sourceTree = "<group>"; };
+		E2A9E1FA1E29F74D00B5521C /* PopUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
 		E2B834221E2895FA0003A08D /* Plug.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plug.swift; sourceTree = "<group>"; };
 		FBBEB0DCEC119F8FF6130847 /* Pods_PlugLife.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlugLife.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -128,6 +130,7 @@
 			children = (
 				E2438AFB1E2755EA00652EB0 /* CountryDetailVC.swift */,
 				E2438ADC1E273E6100652EB0 /* ViewController.swift */,
+				E2A9E1FA1E29F74D00B5521C /* PopUpViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 				E2438ADB1E273E6100652EB0 /* AppDelegate.swift in Sources */,
 				E2438AF61E27421100652EB0 /* Country.swift in Sources */,
 				E2B834231E2895FA0003A08D /* Plug.swift in Sources */,
+				E2A9E1FB1E29F74D00B5521C /* PopUpViewController.swift in Sources */,
 				E2438AF41E273F8300652EB0 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
