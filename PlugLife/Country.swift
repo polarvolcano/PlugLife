@@ -15,9 +15,13 @@ class Country {
     private var _isoCode: String!
     private var _plugType: String!
     private var _currencyURL: String!
+    private var _basecurrencyURL: String!
     private var _currencyCode: String!
     private var _currencyName: String!
     private var _xchangeRate: Double!
+    private var _basexchangeRate: Double!
+    private var _locale: Locale!
+    private var _language: String!
     
     var name: String {
         return _name
@@ -46,9 +50,21 @@ class Country {
         self._currencyCode = currencyCode
         self._currencyName = currencyName
         self._currencyURL = "\(URL_BASE)USD_\(self._currencyCode!)&compact=y"
+        self._basecurrencyURL = "\(URL_BASE)\(baseLocale.currencyCode!)_\(self._currencyCode!)&compact=y"
+        
+        //self._language = language
+    //    let langCode = self._language.components(separatedBy: "/")
+    //    self._locale = Locale(identifier: langCode[0])
+        
     }
     
+    var locale: Locale {
+        return _locale
+    }
+    
+    
     func currencyConvert(completed: @escaping DownloadComplete) {
+
         Alamofire.request(self._currencyURL).responseJSON { (response) in
             print(self._currencyURL)
             print(response.result.value!)
@@ -64,5 +80,24 @@ class Country {
                 completed()
         }
     }
+    
+    func basecurrencyConvert(completed: @escaping DownloadComplete) {
+        Alamofire.request(self._basecurrencyURL).responseJSON { (response) in
+            print(self._basecurrencyURL)
+            print(response.result.value!)
+            let json = JSON(response.result.value)
+            print(json)
+            print("\(baseLocale.currencyCode)_\(self._currencyCode!)")
+            if let basexchangeRate = json["\(baseLocale.currencyCode!)_\(self._currencyCode!)"]["val"].double {
+                self._basexchangeRate = basexchangeRate
+            } else {
+                
+            }
+            print(self._basexchangeRate)
+            
+            completed()
+        }
+    }
+        
     
 }

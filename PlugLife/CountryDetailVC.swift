@@ -15,12 +15,28 @@ class CountryDetailVC: UIViewController,UIWebViewDelegate {
     @IBOutlet weak var nameLbl: UILabel!
     
     @IBOutlet weak var plugImg: UIImageView!
+    
+    @IBOutlet weak var baseCurrency: UILabel!
+    
+    @IBOutlet weak var destCurrency: UILabel!
+    
+    @IBOutlet weak var USD: UILabel!
+    
+    @IBOutlet weak var destCurrency2: UILabel!
+    
     override func viewDidLoad() {
         
         
-        country.currencyConvert {
-            print("Arrived here")
-            self.updateUI()
+        //country.currencyConvert {
+          //  print("Arrived here")
+           // print(baseLocale.regionCode!)
+            //print(baseLocale.currencyCode!)
+            //print(baseLocale.currencySymbol!)
+            //self.updateUI()
+       // }
+        country.basecurrencyConvert {
+            print("Arrived Here")
+           // print(self.country.locale.currencyCode!)
         }
         super.viewDidLoad()
         nameLbl.text = country.name
@@ -40,7 +56,7 @@ class CountryDetailVC: UIViewController,UIWebViewDelegate {
     }
     
     func updateUI() {
-        
+     //   baseCurrency.text = country.
     }
 
 

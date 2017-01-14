@@ -10,4 +10,6 @@ import Foundation
 
 let URL_BASE = "http://free.currencyconverterapi.com/api/v3/convert?q="
 
+let baseLocale = Locale.current
+
 typealias DownloadComplete = () -> ()
