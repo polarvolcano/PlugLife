@@ -24,7 +24,8 @@ class Plug {
     
     init(plugType: String) {
         self._plugType = plugType
-        self._iecURL = "www.iec.ch/worldplugs/type\(self.plugType).htm"
+        self._iecURL = "http://www.iec.ch/worldplugs/type\(self.plugType).htm"
+        
     }
     
 }

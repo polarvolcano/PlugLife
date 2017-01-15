@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		80773F0137BC80E18B827E36 /* Pods_PlugLife.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBBEB0DCEC119F8FF6130847 /* Pods_PlugLife.framework */; };
+		E2063FD11E2B08FC000FD741 /* CountryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2063FD01E2B08FC000FD741 /* CountryTableViewCell.swift */; };
+		E2063FD31E2B3560000FD741 /* CountryInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2063FD21E2B3560000FD741 /* CountryInfoVC.swift */; };
 		E2438ADB1E273E6100652EB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2438ADA1E273E6100652EB0 /* AppDelegate.swift */; };
 		E2438ADD1E273E6100652EB0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2438ADC1E273E6100652EB0 /* ViewController.swift */; };
 		E2438AE01E273E6100652EB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2438ADE1E273E6100652EB0 /* Main.storyboard */; };
@@ -26,6 +28,8 @@
 /* Begin PBXFileReference section */
 		0195973246849CBB2D7C3419 /* Pods-PlugLife.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlugLife.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PlugLife/Pods-PlugLife.debug.xcconfig"; sourceTree = "<group>"; };
 		7CD43CF1246324F6B407527C /* Pods-PlugLife.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlugLife.release.xcconfig"; path = "Pods/Target Support Files/Pods-PlugLife/Pods-PlugLife.release.xcconfig"; sourceTree = "<group>"; };
+		E2063FD01E2B08FC000FD741 /* CountryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryTableViewCell.swift; sourceTree = "<group>"; };
+		E2063FD21E2B3560000FD741 /* CountryInfoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryInfoVC.swift; sourceTree = "<group>"; };
 		E2438AD71E273E6100652EB0 /* PlugLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlugLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2438ADA1E273E6100652EB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2438ADC1E273E6100652EB0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -121,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				E2438AF71E27472B00652EB0 /* CountryCell.swift */,
+				E2063FD01E2B08FC000FD741 /* CountryTableViewCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -131,6 +136,7 @@
 				E2438AFB1E2755EA00652EB0 /* CountryDetailVC.swift */,
 				E2438ADC1E273E6100652EB0 /* ViewController.swift */,
 				E2A9E1FA1E29F74D00B5521C /* PopUpViewController.swift */,
+				E2063FD21E2B3560000FD741 /* CountryInfoVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -282,11 +288,13 @@
 				E2438AFC1E2755EA00652EB0 /* CountryDetailVC.swift in Sources */,
 				E2438ADD1E273E6100652EB0 /* ViewController.swift in Sources */,
 				E2438AF81E27472B00652EB0 /* CountryCell.swift in Sources */,
+				E2063FD11E2B08FC000FD741 /* CountryTableViewCell.swift in Sources */,
 				E2438ADB1E273E6100652EB0 /* AppDelegate.swift in Sources */,
 				E2438AF61E27421100652EB0 /* Country.swift in Sources */,
 				E2B834231E2895FA0003A08D /* Plug.swift in Sources */,
 				E2A9E1FB1E29F74D00B5521C /* PopUpViewController.swift in Sources */,
 				E2438AF41E273F8300652EB0 /* Constants.swift in Sources */,
+				E2063FD31E2B3560000FD741 /* CountryInfoVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,7 +417,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0195973246849CBB2D7C3419 /* Pods-PlugLife.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = VHG46T8GSP;
 				INFOPLIST_FILE = PlugLife/Info.plist;
@@ -424,7 +432,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7CD43CF1246324F6B407527C /* Pods-PlugLife.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = VHG46T8GSP;
 				INFOPLIST_FILE = PlugLife/Info.plist;

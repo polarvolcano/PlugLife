@@ -12,6 +12,8 @@ import Alamofire
 
 class CountryDetailVC: UIViewController,UIWebViewDelegate {
     var country: Country!
+    //var sendURL = String()
+    var plugarray = [Plug]()
 
     @IBOutlet weak var nameLbl: UILabel!
     
@@ -22,9 +24,12 @@ class CountryDetailVC: UIViewController,UIWebViewDelegate {
     @IBOutlet weak var destCurrency: UILabel!
     
     @IBAction func showPopup(sender: UIButton) {
+        print(sender.tag)
         let popOverVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "plugPopUp") as! PopUpViewController
+        popOverVC.stringPassed = self.plugarray[sender.tag]
         self.addChildViewController(popOverVC)
         popOverVC.view.frame = self.view.frame
+        
         self.view.addSubview(popOverVC.view)
         popOverVC.didMove(toParentViewController: self)
     }
@@ -45,13 +50,14 @@ class CountryDetailVC: UIViewController,UIWebViewDelegate {
         
         plugImg.image = img
         
-        var plugarray = [Plug]()
+        //var plugarray = [Plug]()
         let plugs = country.plugType.components(separatedBy: "/")
         for i in 0...plugs.count-1 {
             self.addimage(plug: plugs[i], index: i)
             let plug = Plug(plugType: plugs[i])
-            plugarray.append(plug)
-            print(plugarray[i].iecURL)
+            self.plugarray.append(plug)
+            print(self.plugarray[i].iecURL)
+        
         }
         
         

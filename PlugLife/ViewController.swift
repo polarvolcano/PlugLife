@@ -15,7 +15,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     @IBOutlet weak var searchBar: UISearchBar!
     
-    var countries = [Country]()
+    //var countries = [Country]()
     var filteredCountries = [Country]()
     var inSearchMode = false
 
@@ -48,7 +48,8 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
                 print(isoCode)
                 
                 let country = Country(name: name, isoCode: isoCode, plugType: plugType, currencyCode: currencyCode, currencyName: currencyName)
-                countries.append(country)
+                //countries.append(country)
+                countrylist.append(country)
             }
         } catch let err as NSError {
             print(err.debugDescription)
@@ -64,7 +65,8 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             if inSearchMode {
                 country = filteredCountries[indexPath.row]
             } else {
-                country = countries[indexPath.row]
+            //    country = countries[indexPath.row]
+                country = countrylist[indexPath.row]
             }
             cell.configureCell(country: country)
             
@@ -81,7 +83,8 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         if inSearchMode {
             country = filteredCountries[indexPath.row]
         } else {
-            country = countries[indexPath.row]
+           // country = countries[indexPath.row]
+            country = countrylist[indexPath.row]
         }
         performSegue(withIdentifier: "CountryDetailVC", sender: country)
     }
@@ -92,7 +95,8 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             return filteredCountries.count
             
         }else {
-            return countries.count
+           // return countries.count
+            return countrylist.count
         }
         
     }
@@ -117,7 +121,8 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         } else {
             inSearchMode = true
             let lower = searchBar.text!.lowercased()
-            filteredCountries = countries.filter({$0.name.lowercased().range(of: lower) != nil})
+            //filteredCountries = countries.filter({$0.name.lowercased().range(of: lower) != nil})
+            filteredCountries = countrylist.filter({$0.name.lowercased().range(of: lower) != nil})
             collection.reloadData()
         }
     }

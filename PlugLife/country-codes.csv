@@ -42,12 +42,12 @@ Central African Republic,Central African Republic,République centrafricaine,CF,
 Chad,Chad,Tchad,TD,TCD,148,TCD,cd,CD,TCH,235,CHA,CD,50,CHA,XAF,CHAD,0,CFA Franc BEAC,950,Yes,N'Djamena,AF,.td,fr-TD/ar-TD/sre,2434508,F2,C/D/E/F,220 V,50 Hz
 Chile,Chile,Chili,CL,CHL,152,CHL,cl,CH,RCH,56,CHI,CI,51,CHI,CLP,CHILE,0,Chilean Peso,152,Yes,Santiago,SA,.cl,es-CL,3895114,F3,C/L,220V,50 Hz
 China,China,Chine,CN,CHN,156,CHN,cc,CI,,86,CHN,CH,53,CHN,CNY,CHINA,2,Yuan Renminbi,156,Yes,Beijing,AS,.cn,zh-CN/yue/wuu/dta/ug/za,1814991,F4,I/A/C,220 V,50 Hz
-Christmas Island,,,CX,CXR,162,CHR,xa,KI,AUS,61,CXR,KT,54,,,,,,,Territory of AU,Flying Fish Cove,AS,.cx,en/zh/ms-CC,2078138,,I,230 V,50 Hz
-Cocos (Keeling) Islands,,,CC,CCK,166,ICO,xb,KK,AUS,61,CCK,CK,56,,,,,,,Territory of AU,West Island,AS,.cc,ms-CC/en,1547376,,I,240 V,50 Hz
+Christmas Island,,,CX,CXR,162,CHR,xa,KI,AUS,61,CXR,KT,54,,AUD,,,Australian Dollar,,Territory of AU,Flying Fish Cove,AS,.cx,en/zh/ms-CC,2078138,,I,230 V,50 Hz
+Cocos (Keeling) Islands,,,CC,CCK,166,ICO,xb,KK,AUS,61,CCK,CK,56,,AUD,,,Australian Dollar,,Territory of AU,West Island,AS,.cc,ms-CC/en,1547376,,I,240 V,50 Hz
 Colombia,Colombia,Colombie,CO,COL,170,CLM,ck,CO,CO,57,COL,CO,57,COL,COP,COLOMBIA,2,Colombian Peso,170,Yes,Bogota,SA,.co,es-CO,3686110,F8,A/B,110 V,60 Hz
 Comoros,Comoros,Comores,KM,COM,174,COM,cq,IC,,269,COM,CN,58,COM,KMF,COMOROS,0,Comoro Franc,174,Yes,Moroni,AF,.km,ar/fr-KM,921929,F9,C/E,220 V,50 Hz
 Congo - Brazzaville,Congo,Congo,CG,COG,178,COG,cf,CG,RCB,242,CGO,CF,59,CGO,XAF,CONGO,0,CFA Franc BEAC,950,Yes,Brazzaville,AF,.cg,fr-CG/kg/ln-CG,2260494,G0,C/E,230 V,50 Hz
-Congo - Kinshasa,Democratic Republic of the Congo,République démocratique du Congo,CD,COD,180,COD,cg,ZR,ZRE,243,COD,CG,68,COD,,,,,,Yes,Kinshasa,AF,.cd,fr-CD/ln/kg,203312,,C/D/E/F,220 V,50 Hz
+Congo - Kinshasa,Democratic Republic of the Congo,République démocratique du Congo,CD,COD,180,COD,cg,ZR,ZRE,243,COD,CG,68,COD,CDF,,,Congolese Franc,,Yes,Kinshasa,AF,.cd,fr-CD/ln/kg,203312,,C/D/E/F,220 V,50 Hz
 Cook Islands,Cook Islands,Îles Cook,CK,COK,184,CKH,cw,KU,NZ,682,COK,CW,60,COK,NZD,COOK ISLANDS,2,New Zealand Dollar,554,Associated with NZ,Avarua,OC,.ck,en-CK/mi,1899402,G1,I,240 V,50 Hz
 Costa Rica,Costa Rica,Costa Rica,CR,CRI,188,CTR,cr,CS,CR,506,CRC,CS,61,CRC,CRC,COSTA RICA,2,Costa Rican Colon,188,Yes,San Jose,NA,.cr,es-CR/en,3624060,G2,A/B,120 V,60 Hz
 Croatia,Croatia,Croatie,HR,HRV,191,HRV,ci,RH,HR,385,CRO,HR,62,CRO,HRK,CROATIA,2,Croatian Kuna,191,Yes,Zagreb,EU,.hr,hr-HR/sr,3202326,1M,C/F,230 V,50 Hz
@@ -68,13 +68,13 @@ Eritrea,Eritrea,Érythrée,ER,ERI,232,ERI,ea,,,291,ERI,ER,77,ERI,ERN,ERITREA,2,N
 Estonia,Estonia,Estonie,EE,EST,233,EST,er,EO,EST,372,EST,EN,78,EST,EUR,ESTONIA,2,Euro,978,Yes,Tallinn,EU,.ee,et/ru,453733,1H,C/F,230 V,50 Hz
 Ethiopia,Ethiopia,Éthiopie,ET,ETH,231,ETH,et,ET,ETH,251,ETH,ET,79,ETH,ETB,ETHIOPIA,2,Ethiopian Birr,230,Yes,Addis Ababa,AF,.et,am/en-ET/om-ET/ti-ET/so-ET/sid,337996,H5,C/E/F/L,220 V,50 Hz
 Falkland Islands,Falkland Islands (Malvinas),Îles Falkland (Malvinas),FK,FLK,238,FLK,fk,FK,,500,FLK,FK,81,FLK,FKP,FALKLAND ISLANDS (MALVINAS),2,Falkland Islands Pound,238,Territory of GB,Stanley,SA,.fk,en-FK,3474414,H7,G,240 V,50 Hz
-Faroe Islands,Faeroe Islands,Îles Féroé,FO,FRO,234,FRO,fa,FA,FO,298,FRO,FO,82,FAR,,,,,,Part of DK,Torshavn,EU,.fo,fo/da-FO,2622320,,F/K,230 V,50 Hz
+Faroe Islands,Faeroe Islands,Îles Féroé,FO,FRO,234,FRO,fa,FA,FO,298,FRO,FO,82,FAR,DKK,,,Danish Krone,,Part of DK,Torshavn,EU,.fo,fo/da-FO,2622320,,F/K,230 V,50 Hz
 Fiji,Fiji,Fidji,FJ,FJI,242,FJI,fj,FJ,FJI,679,FIJ,FJ,83,FIJ,FJD,FIJI,2,Fiji Dollar,242,Yes,Suva,OC,.fj,en-FJ/fj,2205218,H8,I,240 V,50 Hz
 Finland,Finland,Finlande,FI,FIN,246,FIN,fi,FI,FIN,358,FIN,FI,84,FIN,EUR,FINLAND,2,Euro,978,Yes,Helsinki,EU,.fi,fi-FI/sv-FI/smn,660013,H9,C/F,230 V,50 Hz
 France,France,France,FR,FRA,250,F,fr,FR,F,33,FRA,FR,85,FRA,EUR,FRANCE,2,Euro,978,Yes,Paris,EU,.fr,fr-FR/frp/br/co/ca/eu/oc,3017382,I0,C/E,230 V,50 Hz
 French Guiana,French Guiana,Guyane française,GF,GUF,254,GUF,fg,FG,F,594,GUF,FG,86,FGU,EUR,FRENCH GUIANA,2,Euro,978,Part of FR,Cayenne,SA,.gf,fr-GF,3381670,I3,C/D/E,220 V,50 Hz
 French Polynesia,French Polynesia,Polynésie française,PF,PYF,258,OCE,fp,PF,F,689,TAH,FP,87,FPO,XPF,FRENCH POLYNESIA,0,CFP Franc,953,Territory of FR,Papeete,OC,.pf,fr-PF/ty,4030656,I4,A/B/E,110 V/220 V,60 Hz/50 Hz
-French Southern Territories,,,TF,ATF,260,,fs,,F,262,,FS,88,,,,,,,Territory of FR,Port-aux-Francais,AN,.tf,fr,1546748,,C/E,230 V,50 Hz
+French Southern Territories,,,TF,ATF,260,,fs,,F,262,,FS,88,,EUR,,,Euro,,Territory of FR,Port-aux-Francais,AN,.tf,fr,1546748,,C/E,230 V,50 Hz
 Gabon,Gabon,Gabon,GA,GAB,266,GAB,go,GO,G,241,GAB,GB,89,GAB,XAF,GABON,0,CFA Franc BEAC,950,Yes,Libreville,AF,.ga,fr-GA,2400553,I5,C,220 V,50 Hz
 Gambia,Gambia,Gambie,GM,GMB,270,GMB,gm,GB,WAG,220,GAM,GA,90,GAM,GMD,GAMBIA,2,Dalasi,270,Yes,Banjul,AF,.gm,en-GM/mnk/wof/wo/ff,2413451,I6,G,230 V,50 Hz
 Georgia,Georgia,Géorgie,GE,GEO,268,GEO,gs,GG,GE,995,GEO,GG,92,GEO,GEL,GEORGIA,2,Lari,981,Yes,Tbilisi,AS,.ge,ka/ru/hy/az,614540,2Q,C/F,220 V,50 Hz
@@ -93,7 +93,7 @@ Guinea-Bissau,Guinea-Bissau,Guinée-Bissau,GW,GNB,624,GNB,pg,GW,,245,GNB,PU,105,
 Guyana,Guyana,Guyana,GY,GUY,328,GUY,gy,GY,GUY,592,GUY,GY,107,GUY,GYD,GUYANA,2,Guyana Dollar,328,Yes,Georgetown,SA,.gy,en-GY,3378535,K0,A/B/D/G,240 V,60 Hz
 Haiti,Haiti,Haïti,HT,HTI,332,HTI,ht,HA,RH,509,HAI,HA,108,HAI,USD,HAITI,2,US Dollar,840,Yes,Port-au-Prince,NA,.ht,ht/fr-HT,3723988,K1,A/B,110 V,60 Hz
 Honduras,Honduras,Honduras,HN,HND,340,HND,ho,HO,,504,HON,HO,111,HON,HNL,HONDURAS,2,Lempira,340,Yes,Tegucigalpa,NA,.hn,es-HN,3608932,K2,A/B,110 V,60 Hz
-Hong Kong,China/Hong Kong Special Administrative Region,Chine/région administrative spéciale de Hong Kong,HK,HKG,344,HKG,,HK,HK,852,HKG,HK,33364,HKG,,,,,,Part of CN,Hong Kong,AS,.hk,zh-HK/yue/zh/en,1819730,,G/D,220 V,50 Hz
+Hong Kong,China/Hong Kong Special Administrative Region,Chine/région administrative spéciale de Hong Kong,HK,HKG,344,HKG,,HK,HK,852,HKG,HK,33364,HKG,HKD,,,Hong Kong Dollar,,Part of CN,Hong Kong,AS,.hk,zh-HK/yue/zh/en,1819730,,G/D,220 V,50 Hz
 Hungary,Hungary,Hongrie,HU,HUN,348,HNG,hu,HU,H,36,HUN,HU,113,HUN,HUF,HUNGARY,2,Forint,348,Yes,Budapest,EU,.hu,hu-HU,719819,K5,C/F,230 V,50 Hz
 Iceland,Iceland,Islande,IS,ISL,352,ISL,ic,IL,IS,354,ISL,IC,114,ISL,ISK,ICELAND,0,Iceland Krona,352,Yes,Reykjavik,EU,.is,is/en/de/da/sv/no,2629691,K6,C/F,230 V,50 Hz
 India,India,Inde,IN,IND,356,IND,ii,IN,IND,91,IND,IN,115,IND,INR,INDIA,2,Indian Rupee,356,Yes,New Delhi,AS,.in,en-IN/hi/bn/te/mr/ta/ur/gu/kn/ml/or/pa/as/bh/sat/ks/ne/sd/kok/doi/mni/sit/sa/fr/lus/inc,1269750,K7,C/D/M,230 V,50 Hz
@@ -162,7 +162,6 @@ Norway,Norway,Norvège,NO,NOR,578,NOR,no,NO,N,47,NOR,NO,186,NOR,NOK,NORWAY,2,Nor
 Oman,Oman,Oman,OM,OMN,512,OMA,mk,OM,,968,OMA,MU,187,OMA,OMR,OMAN,3,Rial Omani,512,Yes,Muscat,AS,.om,ar-OM/en/bal/ur,286963,P4,G/C,240 V,50 Hz
 Pakistan,Pakistan,Pakistan,PK,PAK,586,PAK,pk,PK,PK,92,PAK,PK,188,PAK,PKR,PAKISTAN,2,Pakistan Rupee,586,Yes,Islamabad,AS,.pk,ur-PK/en-PK/pa/sd/ps/brh,1168579,R0,C/D/G/M,240 V,50 Hz
 Palau,Palau,Palaos,PW,PLW,585,PLW,pw,,,680,PLW,PS,189,PLW,USD,PALAU,2,US Dollar,840,Yes,Melekeok,OC,.pw,pau/sov/en-PW/tox/ja/fil/zh,1559582,1Y,A/B,120 V,60 Hz
-Palestine,State of Palestine,État de Palestine,PS,PSE,275,,gz/wj,,,970,PLE,GZ/WE,91267,PLE,,PALESTINE/ STATE OF,,No universal currency,,In contention,East Jerusalem,AS,.ps,ar-PS,6254930,,H,230 V,50 Hz
 Panama,Panama,Panama,PA,PAN,591,PNR,pn,PM,PA,507,PAN,PM,191,PAN,USD,PANAMA,2,US Dollar,840,Yes,Panama City,NA,.pa,es-PA/en,3703430,R1,A/B,110 V,60 Hz
 Papua New Guinea,Papua New Guinea,Papouasie-Nouvelle-Guinée,PG,PNG,598,PNG,pp,NG,PNG,675,PNG,PP,192,PNG,PGK,PAPUA NEW GUINEA,2,Kina,598,Yes,Port Moresby,OC,.pg,en-PG/ho/meu/tpi,2088628,R2,I,240 V,50 Hz
 Paraguay,Paraguay,Paraguay,PY,PRY,600,PRG,py,PY,PY,595,PAR,PA,194,PAR,PYG,PARAGUAY,0,Guarani,600,Yes,Asuncion,SA,.py,es-PY/gn,3437598,R4,C,220 V,50 Hz
@@ -210,7 +209,7 @@ Sweden,Sweden,Suède,SE,SWE,752,S,sw,SN,S,46,SWE,SW,236,SWE,SEK,SWEDEN,2,Swedish
 Switzerland,Switzerland,Suisse,CH,CHE,756,SUI,sz,SW,CH,41,SUI,SZ,237,SUI,CHF,SWITZERLAND,2,Swiss Franc,756,Yes,Bern,EU,.ch,de-CH/fr-CH/it-CH/rm,2658434,V8,C/J,230 V,50 Hz
 Syria,Syrian Arab Republic,République arabe syrienne,SY,SYR,760,SYR,sy,SY,SYR,963,SYR,SY,238,SYR,SYP,SYRIAN ARAB REPUBLIC,2,Syrian Pound,760,Yes,Damascus,AS,.sy,ar-SY/ku/hy/arc/fr/en,163843,V9,C/E/L,220 V,50 Hz
 São Tomé & Príncipe,Sao Tome and Principe,Sao Tomé-et-Principe,ST,STP,678,STP,sf,TP,,239,STP,TP,214,STP,STD,SAO TOME AND PRINCIPE,2,Dobra,678,Yes,Sao Tome,AF,.st,pt-ST,2410758,S9,C/F,220 V,50 Hz
-Taiwan,,,TW,TWN,158,,ch,,RC,886,TPE,TW,925,TPE,,,,,,Yes,Taipei,AS,.tw,zh-TW/zh/nan/hak,1668284,,A/B,110 V,60 Hz
+Taiwan,,,TW,TWN,158,,ch,,RC,886,TPE,TW,925,TPE,TWD,,,New Taiwan Dollar,,Yes,Taipei,AS,.tw,zh-TW/zh/nan/hak,1668284,,A/B,110 V,60 Hz
 Tajikistan,Tajikistan,Tadjikistan,TJ,TJK,762,TJK,ta,TA,TJ,992,TJK,TI,239,TJK,TJS,TAJIKISTAN,2,Somoni,972,Yes,Dushanbe,AS,.tj,tg/ru,1220409,2D,C/F/I,220 V,50 Hz
 Tanzania,United Republic of Tanzania,République-Unie de Tanzanie,TZ,TZA,834,TZA,tz,TN,EAT,255,TAN,TZ,257,TAN,TZS,TANZANIA/ UNITED REPUBLIC OF,2,Tanzanian Shilling,834,Yes,Dodoma,AF,.tz,sw-TZ/en/ar,149590,W0,D/G,230 V,50 Hz
 Thailand,Thailand,Thaïlande,TH,THA,764,THA,th,TH,T,66,THA,TH,240,THA,THB,THAILAND,2,Baht,764,Yes,Bangkok,AS,.th,th/en,1605651,W1,A/B/C/F,220 V,50 Hz

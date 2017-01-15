@@ -7,16 +7,36 @@
 //
 
 import UIKit
+import Alamofire
+import Kanna
 
-class PopUpViewController: UIViewController {
+class PopUpViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var plugInfo: UITextView!
+    var country = countrylist[0]
+    var filteredCountries = [Country]()
+    //var filteredCountries = countrylist.filter({$0.plugType.lowercased().range(of: "A") != nil})
+    
+    var stringPassed = Plug(plugType: "A")
+   // var pluginfo = Plug()
+    
 
     @IBAction func closePopUp(_ sender: Any) {
         self.removeAnimate()
     }
     override func viewDidLoad() {
+        //print(stringPassed)
+        tableView.delegate = self
+        tableView.dataSource = self
+        
         self.showAnimate()
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.black.withAlphaComponent(0.7)
+        self.scrapeIEC()
+        print(country.currencyCode)
+        filteredCountries = countrylist.filter({$0.plugType.range(of: stringPassed.plugType) != nil}) //stringPassed.plugType
+        //tableView.reloadData()
 
         // Do any additional setup after loading the view.
     }
@@ -25,6 +45,7 @@ class PopUpViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     
     func showAnimate() {
         self.view.transform = CGAffineTransform(scaleX: 1.3, y: 1.3)
@@ -46,9 +67,55 @@ class PopUpViewController: UIViewController {
     }
     
     
+    func scrapeIEC() {
+        //print(stringPassed)
         
+        Alamofire.request(self.stringPassed.iecURL).responseString { response in
+            //print("\(response.result.value)")
+            print(self.stringPassed)
+            if let html = response.result.value {
+                self.parseHTML(html: html)
+            }
+            
+        }
+    }
     
+    func parseHTML(html: String) -> Void {
+        if let doc = Kanna.HTML(html: html, encoding: String.Encoding.utf8) {
+            
+            // Search for nodes by CSS selector
+            for link in doc.css("p") {
+            //    print(link.text)
+            //    print(link["href"])
+            }
+            print(doc.css("p")[1].text!)
+            print(doc.css("p")[2].text!)
+            let plugtext = doc.css("p")[1].text! + doc.css("p")[2].text!
+            self.plugInfo.text = plugtext
+        }
+        
+    }
     
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return filteredCountries.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "countryTableCell", for: indexPath) as? CountryTableViewCell {
+            
+            let country = filteredCountries[indexPath.row]
+            cell.configureCell(country: country)
+            return cell
+        }else {
+            return CountryTableViewCell()
+        }
+        
+        
+    }
 
     /*
     // MARK: - Navigation
