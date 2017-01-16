@@ -33,7 +33,7 @@ class PopUpViewController: UIViewController, UITableViewDelegate, UITableViewDat
         self.showAnimate()
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.black.withAlphaComponent(0.7)
-        self.scrapeIEC()
+        //self.scrapeIEC()
         print(country.currencyCode)
         filteredCountries = countrylist.filter({$0.plugType.range(of: stringPassed.plugType) != nil}) //stringPassed.plugType
         //tableView.reloadData()

@@ -1,23 +1,17 @@
 //
-//  CountryInfoVC.swift
+//  CountryStatsVC.swift
 //  PlugLife
 //
-//  Created by Adam McRae on 2017-01-14.
+//  Created by Adam McRae on 2017-01-15.
 //  Copyright © 2017 Adam McRae. All rights reserved.
 //
 
 import UIKit
 
-class CountryInfoVC: UIViewController {
-    var country: Country!
+class CountryStatsVC: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        country.basecurrencyConvert {
-            print("Arrived Here")
-            //self.updateUI()
-            //print(self.country.locale.currencyCode!)
-        }
 
         // Do any additional setup after loading the view.
     }

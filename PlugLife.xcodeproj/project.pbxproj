@@ -10,6 +10,7 @@
 		80773F0137BC80E18B827E36 /* Pods_PlugLife.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBBEB0DCEC119F8FF6130847 /* Pods_PlugLife.framework */; };
 		E2063FD11E2B08FC000FD741 /* CountryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2063FD01E2B08FC000FD741 /* CountryTableViewCell.swift */; };
 		E2063FD31E2B3560000FD741 /* CountryInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2063FD21E2B3560000FD741 /* CountryInfoVC.swift */; };
+		E2063FD51E2C46B4000FD741 /* CountryStatsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2063FD41E2C46B4000FD741 /* CountryStatsVC.swift */; };
 		E2438ADB1E273E6100652EB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2438ADA1E273E6100652EB0 /* AppDelegate.swift */; };
 		E2438ADD1E273E6100652EB0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2438ADC1E273E6100652EB0 /* ViewController.swift */; };
 		E2438AE01E273E6100652EB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2438ADE1E273E6100652EB0 /* Main.storyboard */; };
@@ -30,6 +31,7 @@
 		7CD43CF1246324F6B407527C /* Pods-PlugLife.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlugLife.release.xcconfig"; path = "Pods/Target Support Files/Pods-PlugLife/Pods-PlugLife.release.xcconfig"; sourceTree = "<group>"; };
 		E2063FD01E2B08FC000FD741 /* CountryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryTableViewCell.swift; sourceTree = "<group>"; };
 		E2063FD21E2B3560000FD741 /* CountryInfoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryInfoVC.swift; sourceTree = "<group>"; };
+		E2063FD41E2C46B4000FD741 /* CountryStatsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryStatsVC.swift; sourceTree = "<group>"; };
 		E2438AD71E273E6100652EB0 /* PlugLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlugLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2438ADA1E273E6100652EB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2438ADC1E273E6100652EB0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 				E2438ADC1E273E6100652EB0 /* ViewController.swift */,
 				E2A9E1FA1E29F74D00B5521C /* PopUpViewController.swift */,
 				E2063FD21E2B3560000FD741 /* CountryInfoVC.swift */,
+				E2063FD41E2C46B4000FD741 /* CountryStatsVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 				E2438AF21E273F7E00652EB0 /* csv.swift in Sources */,
 				E2438AFC1E2755EA00652EB0 /* CountryDetailVC.swift in Sources */,
 				E2438ADD1E273E6100652EB0 /* ViewController.swift in Sources */,
+				E2063FD51E2C46B4000FD741 /* CountryStatsVC.swift in Sources */,
 				E2438AF81E27472B00652EB0 /* CountryCell.swift in Sources */,
 				E2063FD11E2B08FC000FD741 /* CountryTableViewCell.swift in Sources */,
 				E2438ADB1E273E6100652EB0 /* AppDelegate.swift in Sources */,

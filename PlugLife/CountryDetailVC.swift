@@ -10,18 +10,18 @@ import Foundation
 import UIKit
 import Alamofire
 
-class CountryDetailVC: UIViewController,UIWebViewDelegate {
+class CountryDetailVC: UIViewController,UIWebViewDelegate, UIScrollViewDelegate {
     var country: Country!
     //var sendURL = String()
     var plugarray = [Plug]()
-
+    let length: CGFloat = 200
+    
+    @IBOutlet weak var plugLbl: UILabel!
     @IBOutlet weak var nameLbl: UILabel!
+    @IBOutlet weak var plugRealImg: UIImageView!
     
     @IBOutlet weak var plugImg: UIImageView!
-    
-    @IBOutlet weak var baseCurrency: UILabel!
-    
-    @IBOutlet weak var destCurrency: UILabel!
+    @IBOutlet weak var scrollView: UIScrollView!
     
     @IBAction func showPopup(sender: UIButton) {
         print(sender.tag)
@@ -38,14 +38,20 @@ class CountryDetailVC: UIViewController,UIWebViewDelegate {
     
     override func viewDidLoad() {
         
+        scrollView.delegate = self
+        
 
-        country.basecurrencyConvert {
-            print("Arrived Here")
-            self.updateUI()
-            //print(self.country.locale.currencyCode!)
-        }
+        
         super.viewDidLoad()
         nameLbl.text = country.name
+        
+        
+        
+
+        // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
         let img = UIImage(named: "\(country.isoCode.lowercased())")
         
         plugImg.image = img
@@ -54,28 +60,15 @@ class CountryDetailVC: UIViewController,UIWebViewDelegate {
         let plugs = country.plugType.components(separatedBy: "/")
         for i in 0...plugs.count-1 {
             self.addimage(plug: plugs[i], index: i)
+            self.addScrollView(plug: plugs[i], index: i)
             let plug = Plug(plugType: plugs[i])
             self.plugarray.append(plug)
             print(self.plugarray[i].iecURL)
-        
+            
         }
-        
-        
-
-        // Do any additional setup after loading the view.
-    }
-    
-   
-    
-    func updateUI() {
-        print(country.basexchangeRate)
-        print(country.currencyCode)
-        //print(country.xchangeRate)
-        
-        baseCurrency.text = "1 CAD"
-        destCurrency.text = "\(country.basexchangeRate) \(country.currencyCode)"
-       // USD.text = "1 USD"
-       // destCurrency2.text = "\(country.xchangeRate) \(country.currencyCode)"
+        scrollView.clipsToBounds = false
+        plugLbl.text = "Plug Type \(plugarray[0].plugType)"
+        plugRealImg.image = UIImage(named: "\(plugarray[0].plugType)plug")
     }
 
 
@@ -85,9 +78,37 @@ class CountryDetailVC: UIViewController,UIWebViewDelegate {
 
     @IBOutlet weak var stackView: UIStackView!
     
+    func addScrollView(plug: String, index: Int) {
+        print("Scrollview Width: \(scrollView.frame.size.width)")
+        let imgview = UIImageView()
+        let btn = UIButton()
+        let img = UIImage(named: "\(plug)")
+        imgview.image = img
+        let xposition = scrollView.frame.size.width/2 + scrollView.frame.size.width * CGFloat(index)
+        btn.frame = CGRect(x: xposition - scrollView.frame.size.height/2, y: 0, width: scrollView.frame.size.height, height: scrollView.frame.size.height)
+        btn.imageView?.contentMode = UIViewContentMode.scaleAspectFit
+        btn.setImage(img, for: .normal)
+        btn.tag = index
+        btn.addTarget(self, action: #selector(showPopup), for: UIControlEvents.touchUpInside)
+        
+        
+        scrollView.contentSize.width = scrollView.frame.size.width * CGFloat(index+1)
+        print("\(plug)")
+        //let imgview = UIImageView(image: img)
+        //btn.imageView?.contentMode = UIViewContentMode.scaleAspectFit
+        //let imgview = UIImageView(image: img)
+        //imgview.contentMode = UIViewContentMode.scaleAspectFit
+        //let webView = UIWebView()
+        //webView.delegate = self
+        
+        scrollView.addSubview(btn)
+        
+        
+    }
+    
     func addimage(plug: String, index: Int) {
         
-        let img = UIImage(named: "\(plug)_3d_plug_m")
+        let img = UIImage(named: "\(plug)")
         let btn = UIButton()
         btn.setImage(img, for: .normal)
         btn.tag = index
@@ -101,6 +122,13 @@ class CountryDetailVC: UIViewController,UIWebViewDelegate {
         stackView.addArrangedSubview(btn)
         
    
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let currentPagefloat: CGFloat = floor((scrollView.contentOffset.x-scrollView.frame.size.width/2)/scrollView.frame.size.width)+1
+        let currentPage = Int(currentPagefloat)
+        plugLbl.text = "Plug Type \(plugarray[currentPage].plugType)"
+        plugRealImg.image = UIImage(named: "\(plugarray[currentPage].plugType)plug")
     }
     
     
