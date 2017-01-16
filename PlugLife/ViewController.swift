@@ -45,9 +45,13 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
                 let plugType = row["Plug_Types"]!
                 let currencyCode = row["ISO4217-currency_alphabetic_code"]!
                 let currencyName = row["ISO4217-currency_name"]!
+                let voltage = row["Voltage"]!
+                let frequency = row["Freq"]!
                 print(isoCode)
+                //print(voltage)
+                //print(frequency)
                 
-                let country = Country(name: name, isoCode: isoCode, plugType: plugType, currencyCode: currencyCode, currencyName: currencyName)
+                let country = Country(name: name, isoCode: isoCode, plugType: plugType, currencyCode: currencyCode, currencyName: currencyName, voltage: voltage, frequency: frequency)
                 //countries.append(country)
                 countrylist.append(country)
             }

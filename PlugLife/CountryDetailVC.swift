@@ -19,6 +19,9 @@ class CountryDetailVC: UIViewController,UIWebViewDelegate, UIScrollViewDelegate 
     @IBOutlet weak var plugLbl: UILabel!
     @IBOutlet weak var nameLbl: UILabel!
     @IBOutlet weak var plugRealImg: UIImageView!
+    @IBOutlet weak var plugTypesLbl: UILabel!
+    @IBOutlet weak var voltageLbl: UILabel!
+    @IBOutlet weak var frequencyLbl: UILabel!
     
     @IBOutlet weak var plugImg: UIImageView!
     @IBOutlet weak var scrollView: UIScrollView!
@@ -66,6 +69,10 @@ class CountryDetailVC: UIViewController,UIWebViewDelegate, UIScrollViewDelegate 
             print(self.plugarray[i].iecURL)
             
         }
+        plugTypesLbl.text = country.plugType
+        
+        voltageLbl.text = country.voltage
+        frequencyLbl.text = country.frequency
         scrollView.clipsToBounds = false
         plugLbl.text = "Plug Type \(plugarray[0].plugType)"
         plugRealImg.image = UIImage(named: "\(plugarray[0].plugType)plug")

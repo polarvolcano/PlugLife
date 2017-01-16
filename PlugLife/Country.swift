@@ -22,6 +22,8 @@ class Country {
     private var _basexchangeRate: Double!
     private var _locale: Locale!
     private var _language: String!
+    private var _voltage: String!
+    private var _frequency: String!
     
     var name: String {
         return _name
@@ -50,12 +52,22 @@ class Country {
         return _basexchangeRate
     }
     
-    init(name: String, isoCode: String, plugType: String, currencyCode: String, currencyName: String) {
+    var voltage: String {
+        return _voltage
+    }
+    
+    var frequency: String {
+        return _frequency
+    }
+    
+    init(name: String, isoCode: String, plugType: String, currencyCode: String, currencyName: String, voltage: String, frequency: String) {
         self._name = name
         self._isoCode = isoCode
         self._plugType = plugType
         self._currencyCode = currencyCode
         self._currencyName = currencyName
+        self._voltage = voltage
+        self._frequency = frequency
         self._currencyURL = "\(URL_BASE)USD_\(self._currencyCode!)&compact=y"
         self._basecurrencyURL = "\(URL_BASE)\(baseLocale.currencyCode!)_\(self._currencyCode!)&compact=y"
         
