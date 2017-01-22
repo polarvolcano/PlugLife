@@ -29,6 +29,8 @@
 		E2B834231E2895FA0003A08D /* Plug.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B834221E2895FA0003A08D /* Plug.swift */; };
 		E2E53BDB1E31D9EB00347359 /* PlugDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E53BDA1E31D9EB00347359 /* PlugDetailVC.swift */; };
 		E2E53BDD1E31E47D00347359 /* PlugDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E53BDC1E31E47D00347359 /* PlugDetailCell.swift */; };
+		E2E53BE11E34679A00347359 /* CompatibleNotesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E53BE01E34679A00347359 /* CompatibleNotesCell.swift */; };
+		E2E53BE31E346EA400347359 /* CompatNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E53BE21E346EA400347359 /* CompatNote.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +59,8 @@
 		E2B834221E2895FA0003A08D /* Plug.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plug.swift; sourceTree = "<group>"; };
 		E2E53BDA1E31D9EB00347359 /* PlugDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlugDetailVC.swift; sourceTree = "<group>"; };
 		E2E53BDC1E31E47D00347359 /* PlugDetailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlugDetailCell.swift; sourceTree = "<group>"; };
+		E2E53BE01E34679A00347359 /* CompatibleNotesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompatibleNotesCell.swift; sourceTree = "<group>"; };
+		E2E53BE21E346EA400347359 /* CompatNote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompatNote.swift; sourceTree = "<group>"; };
 		FBBEB0DCEC119F8FF6130847 /* Pods_PlugLife.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlugLife.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -131,6 +135,7 @@
 			children = (
 				E2438AF51E27421100652EB0 /* Country.swift */,
 				E2B834221E2895FA0003A08D /* Plug.swift */,
+				E2E53BE21E346EA400347359 /* CompatNote.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -141,6 +146,7 @@
 				E2438AF71E27472B00652EB0 /* CountryCell.swift */,
 				E2063FD01E2B08FC000FD741 /* CountryTableViewCell.swift */,
 				E2E53BDC1E31E47D00347359 /* PlugDetailCell.swift */,
+				E2E53BE01E34679A00347359 /* CompatibleNotesCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -308,6 +314,7 @@
 				E2438AFC1E2755EA00652EB0 /* CountryDetailVC.swift in Sources */,
 				E2438ADD1E273E6100652EB0 /* ViewController.swift in Sources */,
 				E2063FD51E2C46B4000FD741 /* CountryStatsVC.swift in Sources */,
+				E2E53BE11E34679A00347359 /* CompatibleNotesCell.swift in Sources */,
 				E2438AF81E27472B00652EB0 /* CountryCell.swift in Sources */,
 				E2063FD11E2B08FC000FD741 /* CountryTableViewCell.swift in Sources */,
 				E2438ADB1E273E6100652EB0 /* AppDelegate.swift in Sources */,
@@ -315,6 +322,7 @@
 				E2B834231E2895FA0003A08D /* Plug.swift in Sources */,
 				E2E53BDD1E31E47D00347359 /* PlugDetailCell.swift in Sources */,
 				E2592EF41E2C55A300F53D4B /* PlugDescriptions.swift in Sources */,
+				E2E53BE31E346EA400347359 /* CompatNote.swift in Sources */,
 				E2A9E1FB1E29F74D00B5521C /* PopUpViewController.swift in Sources */,
 				E2592EF81E2C90D900F53D4B /* AnimationVC.swift in Sources */,
 				E2438AF41E273F8300652EB0 /* Constants.swift in Sources */,

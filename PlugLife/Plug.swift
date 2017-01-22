@@ -14,6 +14,9 @@ class Plug {
     private var _info: String!
     private var _compatiblePlugs: [String] = []
     private var _plugImageList: [String] = []
+    private var _numPins: Int!
+    private var _ampRating: Float!
+    
     
     
     var plugType: String {
@@ -31,6 +34,14 @@ class Plug {
     
     var plugImageList: [String] {
         return _plugImageList
+    }
+    
+    var numPins: Int {
+        return _numPins
+    }
+    
+    var ampRating: Float {
+        return _ampRating
     }
     
     

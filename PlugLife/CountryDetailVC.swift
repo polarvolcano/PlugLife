@@ -12,16 +12,20 @@ import Alamofire
 
 class CountryDetailVC: UIViewController,UIWebViewDelegate, UIScrollViewDelegate, UITableViewDelegate, UITableViewDataSource {
     var country: Country!
+    
     var plugCompat = false
     var voltCompat = false
     var totalCompat = false
     //var sendURL = String()
     var plugarray = [Plug]()
+    
+    
     let length: CGFloat = 200
     
     
     
 
+    @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var infoView: UIView!
     @IBOutlet weak var plugLbl: UILabel!
     @IBOutlet weak var nameLbl: UILabel!
@@ -48,9 +52,12 @@ class CountryDetailVC: UIViewController,UIWebViewDelegate, UIScrollViewDelegate,
     let currentCountry = countrylist.filter({$0.isoCode.range(of: Locale.current.regionCode!) != nil})[0]
     
     
+    
     override func viewDidLoad() {
         
+       
         
+       // print(compatnotes.infoText[0])
         
         
         scrollView.delegate = self
@@ -58,6 +65,8 @@ class CountryDetailVC: UIViewController,UIWebViewDelegate, UIScrollViewDelegate,
 
         
         super.viewDidLoad()
+        tableView.delegate = self
+        tableView.dataSource = self
         nameLbl.text = country.name
         
         
@@ -67,8 +76,8 @@ class CountryDetailVC: UIViewController,UIWebViewDelegate, UIScrollViewDelegate,
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        let voltcompare1 = Float(String(country.voltage.characters.prefix(3)))!
-        let voltcompare2 = Float(String(currentCountry.voltage.characters.prefix(3)))!
+       // let voltcompare1 = Float(String(country.voltage.characters.prefix(3)))!
+       // let voltcompare2 = Float(String(currentCountry.voltage.characters.prefix(3)))!
         let img = UIImage(named: "\(country.isoCode.lowercased())")
         infoView.layer.borderWidth = 3
         infoView.layer.borderColor = UIColor.black.cgColor
@@ -117,11 +126,12 @@ class CountryDetailVC: UIViewController,UIWebViewDelegate, UIScrollViewDelegate,
         print("\(Locale.current.regionCode)")
         
         print(currentCountry.name)
-        if voltcompare1/voltcompare2 > 0.9 && voltcompare1/voltcompare2 < 1.1 {
-            voltCompat = true
-            print("voltage within range")
-            
-        }
+   //     if voltcompare1/voltcompare2 > 0.9 && voltcompare1/voltcompare2 < 1.1 {
+   //         voltCompat = true
+   //         print("voltage within range")
+   //
+   //     }
+        
         
         
     }
@@ -194,17 +204,20 @@ class CountryDetailVC: UIViewController,UIWebViewDelegate, UIScrollViewDelegate,
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return filteredCountries.count
+        let compatnotes = CompatNote(plug: currentCountry, socket: country)
+        return compatnotes.compatType.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let cell = tableView.dequeueReusableCell(withIdentifier: "countryTableCell", for: indexPath) as? CountryTableViewCell {
+        let compatnotes = CompatNote(plug: currentCountry, socket: country)
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "compatibleCell", for: indexPath) as? CompatibleNotesCell {
             
-            let country = filteredCountries[indexPath.row]
-            cell.configureCell(country: country)
+            //let country = filteredCountries[indexPath.row]
+            cell.configureCell(text: "\(compatnotes.infoText[indexPath.row]!)", image: "\(compatnotes.compatType[indexPath.row]!)")
             return cell
+            //return CompatibleNotesCell()
         }else {
-            return CountryTableViewCell()
+            return CompatibleNotesCell()
         }
         
         

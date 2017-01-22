@@ -11,6 +11,17 @@ import UIKit
 class PlugDetailVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     
+    
+    @IBAction func moreInfo(_ sender: Any) {
+        //self.removeAnimate()
+        let popOverVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "plugPopUp") as! PopUpViewController
+        popOverVC.stringPassed = self.stringPassed
+        self.addChildViewController(popOverVC)
+        popOverVC.view.frame = self.view.frame
+        
+        self.view.addSubview(popOverVC.view)
+        popOverVC.didMove(toParentViewController: self)
+    }
     @IBAction func closePopUp(_ sender: Any) {
         self.removeAnimate()
     }
@@ -26,9 +37,6 @@ class PlugDetailVC: UIViewController, UICollectionViewDelegate, UICollectionView
     // var pluginfo = Plug()
     
     
-    @IBAction func closePopU(_ sender: Any) {
-        self.removeAnimate()
-    }
     override func viewDidLoad() {
         //print(stringPassed)
 
