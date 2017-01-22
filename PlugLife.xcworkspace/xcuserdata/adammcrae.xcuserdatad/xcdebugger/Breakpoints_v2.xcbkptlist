@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PlugLife/CountryDetailVC.swift"
-            timestampString = "506222854.798794"
+            timestampString = "506727533.412722"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -90,13 +90,45 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PlugLife/Plug.swift"
-            timestampString = "506064264.202424"
+            timestampString = "506726358.388153"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
             landmarkName = "Plug"
             landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PlugLife.Plug.init (plugType : Swift.String) -&gt; PlugLife.Plug"
+                  moduleName = "PlugLife"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/adammcrae/Documents/PlugLife/PlugLife/Plug.swift"
+                  timestampString = "506718125.895375"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "67">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PlugLife.Plug.__allocating_init (plugType : Swift.String) -&gt; PlugLife.Plug"
+                  moduleName = "PlugLife"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/adammcrae/Documents/PlugLife/PlugLife/Plug.swift"
+                  timestampString = "506718125.897637"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -106,11 +138,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PlugLife/CountryDetailVC.swift"
-            timestampString = "506232101.07754"
+            timestampString = "506727533.412722"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "128"
-            endingLineNumber = "128"
+            startingLineNumber = "201"
+            endingLineNumber = "201"
             landmarkName = "addimage(plug:index:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -122,11 +154,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PlugLife/CountryDetailVC.swift"
-            timestampString = "506232101.07754"
+            timestampString = "506727533.412722"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "126"
-            endingLineNumber = "126"
+            startingLineNumber = "199"
+            endingLineNumber = "199"
             landmarkName = "addimage(plug:index:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -138,11 +170,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PlugLife/PopUpViewController.swift"
-            timestampString = "506142871.48715"
+            timestampString = "506413544.698622"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "77"
-            endingLineNumber = "77"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
             landmarkName = "scrapeIEC()"
             landmarkType = "7">
          </BreakpointContent>
@@ -154,12 +186,122 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PlugLife/PopUpViewController.swift"
-            timestampString = "506142871.48715"
+            timestampString = "506413544.698622"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "95"
-            endingLineNumber = "95"
+            startingLineNumber = "105"
+            endingLineNumber = "105"
             landmarkName = "parseHTML(html:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PlugLife/AnimationVC.swift"
+            timestampString = "506239597.099572"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "logoImage"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PlugLife.AnimationVC.centreImage.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UIImageView&gt;"
+                  moduleName = "PlugLife"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/adammcrae/Documents/PlugLife/PlugLife/AnimationVC.swift"
+                  timestampString = "506239044.684926"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PlugLife.AnimationVC.centreImage.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UIImageView&gt;"
+                  moduleName = "PlugLife"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/adammcrae/Documents/PlugLife/PlugLife/AnimationVC.swift"
+                  timestampString = "506239044.68712"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "52">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PlugLife.AnimationVC.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; PlugLife.AnimationVC"
+                  moduleName = "PlugLife"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/adammcrae/Documents/PlugLife/PlugLife/AnimationVC.swift"
+                  timestampString = "506239044.68869"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PlugLife.AnimationVC.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;PlugLife.AnimationVC&gt;"
+                  moduleName = "PlugLife"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/adammcrae/Documents/PlugLife/PlugLife/AnimationVC.swift"
+                  timestampString = "506239044.690151"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "36">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PlugLife/AnimationVC.swift"
+            timestampString = "506317280.42895"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "viewWillAppear(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PlugLife/Plug.swift"
+            timestampString = "506726358.388153"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "init(plugType:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

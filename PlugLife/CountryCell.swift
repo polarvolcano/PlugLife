@@ -20,6 +20,10 @@ class CountryCell: UICollectionViewCell {
     
         nameLlb.text = self.country.name.capitalized
         flag.image = UIImage(named: "\(self.country.isoCode.lowercased())")
+        flag.layer.borderWidth = 3
+        flag.layer.borderColor = UIColor.black.cgColor
+        flag.layer.cornerRadius = 4
+        flag.clipsToBounds = true
     }
     
 }

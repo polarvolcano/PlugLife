@@ -12,6 +12,7 @@ import Kanna
 
 class PopUpViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    @IBOutlet weak var popView: UIView!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var plugInfo: UITextView!
     var country = countrylist[0]
@@ -34,6 +35,7 @@ class PopUpViewController: UIViewController, UITableViewDelegate, UITableViewDat
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.black.withAlphaComponent(0.7)
         //self.scrapeIEC()
+        
         print(country.currencyCode)
         filteredCountries = countrylist.filter({$0.plugType.range(of: stringPassed.plugType) != nil}) //stringPassed.plugType
         //tableView.reloadData()
@@ -44,6 +46,14 @@ class PopUpViewController: UIViewController, UITableViewDelegate, UITableViewDat
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        popView.layer.borderWidth = 6
+        popView.layer.borderColor = UIColor.black.cgColor
+        popView.layer.cornerRadius = 4
+        popView.clipsToBounds = true
+        self.plugInfo.text = typeInfo["\(stringPassed.plugType)"]
     }
     
     
