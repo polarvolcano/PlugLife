@@ -20,6 +20,10 @@ class CountryTableViewCell: UITableViewCell {
     func configureCell(country: Country) {
         countryName.text = "\(country.name)"
         flag.image = UIImage(named:country.isoCode.lowercased())
+        flag.layer.borderWidth = 1
+        flag.layer.borderColor = UIColor.black.cgColor
+        flag.layer.cornerRadius = 4
+        flag.clipsToBounds = true
     }
 
 }

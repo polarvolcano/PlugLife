@@ -22,9 +22,40 @@ class CountryDetailVC: UIViewController,UIWebViewDelegate, UIScrollViewDelegate,
     
     let length: CGFloat = 200
     
+    @IBOutlet weak var baseCountryFlag: UIButton!
     
+    @IBOutlet weak var stackViewWidth: NSLayoutConstraint!
     
+    @IBAction func showBaseCountryStats(_ sender: Any) {
+        nameLbl.text = currentCountry.name
+        let img = UIImage(named: "\(currentCountry.isoCode.lowercased())")
+        plugImg.image = img
+        plugTypesLbl.text = "Plug Types: \(currentCountry.plugType)"
+        
+        voltageLbl.text = "Voltage: \(currentCountry.voltage)"
+        frequencyLbl.text = "Frequency: \(currentCountry.frequency)"
+    }
 
+    
+    @IBAction func hideBaseCountryStats(_ sender: Any) {
+        nameLbl.text = country.name
+        let img = UIImage(named: "\(country.isoCode.lowercased())")
+        plugImg.image = img
+        plugTypesLbl.text = "Plug Types: \(country.plugType)"
+        
+        voltageLbl.text = "Voltage: \(country.voltage)"
+        frequencyLbl.text = "Frequency: \(country.frequency)"
+    }
+    
+    @IBAction func hideBaseCountryStats2(_ sender: Any) {
+        nameLbl.text = country.name
+        let img = UIImage(named: "\(country.isoCode.lowercased())")
+        plugImg.image = img
+        plugTypesLbl.text = "Plug Types: \(country.plugType)"
+        
+        voltageLbl.text = "Voltage: \(country.voltage)"
+        frequencyLbl.text = "Frequency: \(country.frequency)"
+    }
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var infoView: UIView!
     @IBOutlet weak var plugLbl: UILabel!
@@ -49,7 +80,7 @@ class CountryDetailVC: UIViewController,UIWebViewDelegate, UIScrollViewDelegate,
         
     }
     
-    let currentCountry = countrylist.filter({$0.isoCode.range(of: Locale.current.regionCode!) != nil})[0]
+  //  let currentCountry = countrylist.filter({$0.isoCode.range(of: baseLocale.regionCode!) != nil})[0]
     
     
     
@@ -58,6 +89,13 @@ class CountryDetailVC: UIViewController,UIWebViewDelegate, UIScrollViewDelegate,
        
         
        // print(compatnotes.infoText[0])
+        let img = UIImage(named: "\(currentCountry.isoCode.lowercased())")
+        
+        baseCountryFlag.setImage(img, for: .normal)
+        baseCountryFlag.layer.borderWidth = 3
+        baseCountryFlag.layer.borderColor = UIColor.black.cgColor
+        baseCountryFlag.layer.cornerRadius = 4
+        baseCountryFlag.clipsToBounds = true
         
         
         scrollView.delegate = self
@@ -92,9 +130,10 @@ class CountryDetailVC: UIViewController,UIWebViewDelegate, UIScrollViewDelegate,
         
         //var plugarray = [Plug]()
         let plugs = country.plugType.components(separatedBy: "/")
+        let homeplugs = currentCountry.plugType.components(separatedBy: "/")
     
         for i in 0...plugs.count-1 {
-            self.addimage(plug: plugs[i], index: i)
+            //self.addimage(plug: plugs[i], index: i)
             self.addScrollView(plug: plugs[i], index: i)
             let plug = Plug(plugType: plugs[i])
             self.plugarray.append(plug)
@@ -109,6 +148,16 @@ class CountryDetailVC: UIViewController,UIWebViewDelegate, UIScrollViewDelegate,
             
         }
         
+        for i in 0...homeplugs.count-1 {
+            self.addimage(plug: homeplugs[i], index: (plugs.count+i))
+            let plug = Plug(plugType: homeplugs[i])
+            self.plugarray.append(plug)
+            }
+            
+            
+            
+        
+        
         
         
         
@@ -116,12 +165,13 @@ class CountryDetailVC: UIViewController,UIWebViewDelegate, UIScrollViewDelegate,
             totalCompat = true
         }
         
-        plugTypesLbl.text = country.plugType
+        plugTypesLbl.text = "Plug Types: \(country.plugType)"
         
-        voltageLbl.text = country.voltage
-        frequencyLbl.text = country.frequency
+        voltageLbl.text = "Voltage: \(country.voltage)"
+        frequencyLbl.text = "Frequency: \(country.frequency)"
+        
         scrollView.clipsToBounds = false
-        plugLbl.text = "Plug Type \(plugarray[0].plugType)"
+        plugLbl.text = "Plug Type: \(plugarray[0].plugType)"
         
         print("\(Locale.current.regionCode)")
         
@@ -182,12 +232,9 @@ class CountryDetailVC: UIViewController,UIWebViewDelegate, UIScrollViewDelegate,
         btn.tag = index
         btn.addTarget(self, action: #selector(showPopup), for: UIControlEvents.touchUpInside)
         btn.imageView?.contentMode = UIViewContentMode.scaleAspectFit
-        //let imgview = UIImageView(image: img)
-        //imgview.contentMode = UIViewContentMode.scaleAspectFit
-        //let webView = UIWebView()
-        //webView.delegate = self
-        
+        stackViewWidth.constant += 44
         stackView.addArrangedSubview(btn)
+        
         
    
     }
@@ -204,6 +251,7 @@ class CountryDetailVC: UIViewController,UIWebViewDelegate, UIScrollViewDelegate,
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
         let compatnotes = CompatNote(plug: currentCountry, socket: country)
         return compatnotes.compatType.count
     }

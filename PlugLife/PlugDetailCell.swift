@@ -16,11 +16,11 @@ class PlugDetailCell: UICollectionViewCell {
     
     var plug: String!
     
-    func configureCell(plug: String!) {
+    func configureCell(plug: String!, name: String!) {
         self.plug = plug
         
-        plugImageLabel.text = self.plug.capitalized
-        plugImage.image = UIImage(named: "\(self.plug.lowercased())")
+        plugImageLabel.text = name
+        plugImage.image = UIImage(named: plug)
         plugImage.layer.borderWidth = 3
         plugImage.layer.borderColor = UIColor.black.cgColor
         plugImage.layer.cornerRadius = 4

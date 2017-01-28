@@ -14,8 +14,11 @@ class Plug {
     private var _info: String!
     private var _compatiblePlugs: [String] = []
     private var _plugImageList: [String] = []
+    private var _plugImageNameList: [String] = []
     private var _numPins: Int!
     private var _ampRating: Float!
+    private var _grounded: Bool!
+    
     
     
     
@@ -36,6 +39,10 @@ class Plug {
         return _plugImageList
     }
     
+    var plugImageNameList: [String] {
+        return _plugImageNameList
+    }
+    
     var numPins: Int {
         return _numPins
     }
@@ -44,12 +51,20 @@ class Plug {
         return _ampRating
     }
     
+    var grounded: Bool {
+        return _grounded
+    }
+    
     
     init(plugType: String) {
         self._plugType = plugType
         self._iecURL = "http://www.iec.ch/worldplugs/type\(self.plugType).htm"
         self._compatiblePlugs = compatiblePlug[plugType]!
-        self._plugImageList = ["plugImage\(self.plugType)1","plugImage\(self.plugType)2","plugImage\(self.plugType)3" ]
+        self._plugImageList = ["electricity-type-\(self.plugType)-plug","electricity-type-\(self.plugType)-socket"]
+        self._plugImageNameList = ["Plug","Socket"]
+        self._numPins = numPin[plugType]
+        self._ampRating = ampRated[plugType]
+        self._grounded = isGround[plugType]
         
     }
     

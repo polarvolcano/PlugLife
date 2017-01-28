@@ -9,316 +9,44 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "PlugLife/Country.swift"
-            timestampString = "506232201.256323"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "81"
-            endingLineNumber = "81"
-            landmarkName = "Country"
-            landmarkType = "3">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "PlugLife.Country.currencyConvert (completed : () -&gt; ()) -&gt; ()"
-                  moduleName = "PlugLife"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/adammcrae/Documents/PlugLife/PlugLife/Country.swift"
-                  timestampString = "506054925.891942"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "57"
-                  endingLineNumber = "57"
-                  offsetFromSymbolStart = "48">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "PlugLife.Country.(currencyConvert (completed : () -&gt; ()) -&gt; ()).(closure #1)"
-                  moduleName = "PlugLife"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/adammcrae/Documents/PlugLife/PlugLife/Country.swift"
-                  timestampString = "506054925.893814"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "58"
-                  endingLineNumber = "58"
-                  offsetFromSymbolStart = "32">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "PlugLife/CountryDetailVC.swift"
-            timestampString = "506757830.471318"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "73"
-            endingLineNumber = "73"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "PlugLife/ViewController.swift"
-            timestampString = "506231704.411146"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "48"
-            endingLineNumber = "48"
-            landmarkName = "parseCountryCSV()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "PlugLife/Plug.swift"
-            timestampString = "506804938.417388"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
-            landmarkName = "Plug"
-            landmarkType = "3">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "PlugLife.Plug.init (plugType : Swift.String) -&gt; PlugLife.Plug"
-                  moduleName = "PlugLife"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/adammcrae/Documents/PlugLife/PlugLife/Plug.swift"
-                  timestampString = "506718125.895375"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "12"
-                  endingLineNumber = "12"
-                  offsetFromSymbolStart = "67">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "PlugLife.Plug.__allocating_init (plugType : Swift.String) -&gt; PlugLife.Plug"
-                  moduleName = "PlugLife"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/adammcrae/Documents/PlugLife/PlugLife/Plug.swift"
-                  timestampString = "506718125.897637"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "4">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "PlugLife/CountryDetailVC.swift"
-            timestampString = "506757830.471318"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "189"
-            endingLineNumber = "189"
-            landmarkName = "addimage(plug:index:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "PlugLife/CountryDetailVC.swift"
-            timestampString = "506757830.471318"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "187"
-            endingLineNumber = "187"
-            landmarkName = "addimage(plug:index:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "PlugLife/PopUpViewController.swift"
-            timestampString = "506413544.698622"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "87"
-            endingLineNumber = "87"
-            landmarkName = "scrapeIEC()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "PlugLife/PopUpViewController.swift"
-            timestampString = "506413544.698622"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "105"
-            endingLineNumber = "105"
-            landmarkName = "parseHTML(html:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "PlugLife/AnimationVC.swift"
-            timestampString = "506239597.099572"
+            filePath = "PlugLife/Constants.swift"
+            timestampString = "506923002.124592"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "14"
-            endingLineNumber = "14"
-            landmarkName = "logoImage"
-            landmarkType = "24">
+            endingLineNumber = "14">
             <Locations>
                <Location
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "PlugLife.AnimationVC.centreImage.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UIImageView&gt;"
+                  symbolName = "globalinit_33_19A9FD202F856CA869A085382243D819_func2"
                   moduleName = "PlugLife"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/adammcrae/Documents/PlugLife/PlugLife/AnimationVC.swift"
-                  timestampString = "506239044.684926"
+                  urlString = "file:///Users/adammcrae/Documents/PlugLife/PlugLife/Constants.swift"
+                  timestampString = "506923003.238996"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "13"
-                  endingLineNumber = "13"
-                  offsetFromSymbolStart = "40">
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "4">
                </Location>
                <Location
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "PlugLife.AnimationVC.centreImage.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UIImageView&gt;"
+                  symbolName = "PlugLife.countrylist.unsafeMutableAddressor : Swift.Array&lt;PlugLife.Country&gt;"
                   moduleName = "PlugLife"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/adammcrae/Documents/PlugLife/PlugLife/AnimationVC.swift"
-                  timestampString = "506239044.68712"
+                  urlString = "file:///Users/adammcrae/Documents/PlugLife/PlugLife/Constants.swift"
+                  timestampString = "506923003.241593"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "13"
-                  endingLineNumber = "13"
-                  offsetFromSymbolStart = "52">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "PlugLife.AnimationVC.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; PlugLife.AnimationVC"
-                  moduleName = "PlugLife"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/adammcrae/Documents/PlugLife/PlugLife/AnimationVC.swift"
-                  timestampString = "506239044.68869"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "13"
-                  endingLineNumber = "13"
-                  offsetFromSymbolStart = "76">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "PlugLife.AnimationVC.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;PlugLife.AnimationVC&gt;"
-                  moduleName = "PlugLife"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/adammcrae/Documents/PlugLife/PlugLife/AnimationVC.swift"
-                  timestampString = "506239044.690151"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "13"
-                  endingLineNumber = "13"
-                  offsetFromSymbolStart = "36">
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "4">
                </Location>
             </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "PlugLife/AnimationVC.swift"
-            timestampString = "506317280.42895"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
-            landmarkName = "viewWillAppear(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "PlugLife/Plug.swift"
-            timestampString = "506804938.417388"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "53"
-            endingLineNumber = "53"
-            landmarkName = "init(plugType:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "PlugLife/CountryDetailVC.swift"
-            timestampString = "506758485.175837"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "208"
-            endingLineNumber = "208"
-            landmarkName = "tableView(_:numberOfRowsInSection:)"
-            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

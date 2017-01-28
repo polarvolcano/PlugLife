@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -23,6 +24,9 @@
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Copyright © 2017 Adam McRae. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="obG-Y5-kRd">
                                 <rect key="frame" x="20" y="626" width="335" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="DfK-w0-u3z"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -37,11 +41,11 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="obG-Y5-kRd" secondAttribute="centerX" id="5cz-MP-9tL"/>
+                            <constraint firstItem="obG-Y5-kRd" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="4" id="5hp-DR-3pj"/>
                             <constraint firstItem="oCV-e4-dtu" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="BSJ-hE-WJR"/>
                             <constraint firstItem="oCV-e4-dtu" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Cqy-QJ-gGm"/>
-                            <constraint firstItem="obG-Y5-kRd" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="20" symbolic="YES" id="SfN-ll-jLj"/>
-                            <constraint firstAttribute="bottom" secondItem="obG-Y5-kRd" secondAttribute="bottom" constant="20" id="Y44-ml-fuU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="obG-Y5-kRd" secondAttribute="trailing" constant="4" id="Wte-2o-EEf"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="obG-Y5-kRd" secondAttribute="bottom" constant="20" id="aoO-P1-qDe"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -51,6 +55,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="B2" width="488" height="488"/>
+        <image name="B2" width="629" height="629"/>
     </resources>
 </document>

@@ -11,11 +11,14 @@ import UIKit
 class CompatibleNotesCell: UITableViewCell {
 
     @IBOutlet weak var noteImage: UIImageView!
-    @IBOutlet weak var noteText: UITextView!
+    @IBOutlet weak var noteText2: UILabel!
     
     func configureCell(text: String, image: String) {
-        noteText.text = text
+        
+        
         noteImage.image = UIImage(named: image)
+        noteText2.text = text
+        
     }
 
 

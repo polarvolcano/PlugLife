@@ -41,9 +41,9 @@ class AnimationVC: UIViewController {
     {
         self.centreImage.animationImages = logoImage;
         self.centreImage.animationRepeatCount = 1
-        self.centreImage.animationDuration = 4
+        self.centreImage.animationDuration = 2
         self.centreImage.startAnimating()
-        UIView.animate(withDuration: 4.0, delay: 4, animations: {
+        UIView.animate(withDuration: 2.0, delay: 2, animations: {
         //    self.centreImage.image = UIImage(named: "C2")
                         self.glasses.center.x -= self.view.bounds.width
                         self.plugLifetxt.center.y += self.view.bounds.height

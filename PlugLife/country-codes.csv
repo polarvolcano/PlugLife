@@ -1,4 +1,5 @@
 name,official_name_en,official_name_fr,ISO3166-1-Alpha-2,ISO3166-1-Alpha-3,ISO3166-1-numeric,ITU,MARC,WMO,DS,Dial,FIFA,FIPS,GAUL,IOC,ISO4217-currency_alphabetic_code,ISO4217-currency_country_name,ISO4217-currency_minor_unit,ISO4217-currency_name,ISO4217-currency_numeric_code,is_independent,Capital,Continent,TLD,Languages,geonameid,EDGAR,Plug_Types,Voltage,Freq
+View All Plugs,View All Plugs,View All Plugs,AA,AAA,,,aa,,,,,,,,AAA,VIEW ALL PLUGS,2,None,,Yes,,,,,,,A/B/C/D/E/F/G/H/I/J/K/L/M/N/O,0,N/A
 Afghanistan,Afghanistan,Afghanistan,AF,AFG,4,AFG,af,AF,AFG,93,AFG,AF,1,AFG,AFN,AFGHANISTAN,2,Afghani,971,Yes,Kabul,AS,.af,fa-AF/ps/uz-AF/tk,1149361,B2,C/F,220,50 Hz
 Albania,Albania,Albanie,AL,ALB,8,ALB,aa,AB,AL,355,ALB,AL,3,ALB,ALL,ALBANIA,2,Lek,8,Yes,Tirana,EU,.al,sqi,783754,B3,C/F,220,50 Hz
 Algeria,Algeria,Algérie,DZ,DZA,12,ALG,ae,AL,DZ,213,ALG,AG,4,ALG,DZD,ALGERIA,2,Algerian Dinar,12,Yes,Algiers,AF,.dz,ar-DZ,2589581,B4,C/F,220,50 Hz
@@ -26,8 +27,8 @@ Bhutan,Bhutan,Bhoutan,BT,BTN,64,BTN,bt,,,975,BHU,BT,31,BHU,INR,BHUTAN,2,Indian R
 Bolivia,Bolivia (Plurinational State of),Bolivie (État plurinational de),BO,BOL,68,BOL,bo,BO,BOL,591,BOL,BL,33,BOL,BOB,BOLIVIA/ PLURINATIONAL STATE OF,2,Boliviano,68,Yes,Sucre,SA,.bo,es-BO/qu/ay,3923057,,A/C,115/230,50 Hz
 Bosnia,Bosnia and Herzegovina,Bosnie-Herzégovine,BA,BIH,70,BIH,bn,BG,BIH,387,BIH,BK,34,BIH,BAM,BOSNIA AND HERZEGOVINA,2,Convertible Mark,977,Yes,Sarajevo,EU,.ba,bs/hr-BA/sr-BA,3277605,1E,C/F,230,50 Hz
 Botswana,Botswana,Botswana,BW,BWA,72,BOT,bs,BC,BW,267,BOT,BC,35,BOT,BWP,BOTSWANA,2,Pula,72,Yes,Gaborone,AF,.bw,en-BW/tn-BW,933860,B1,D/G/M,230,50 Hz
-Brazil,Brazil,Brésil,BR,BRA,76,B,bl,BZ,BR,55,BRA,BR,37,BRA,BRL,BRAZIL,2,Brazilian Real,986,Yes,Brasilia,SA,.br,pt-BR/es/en/fr,3469034,D5,C/N,127V/220,60 Hz
-Britishirgin Islands,Britishirgin Islands,Îlesierges britanniques,VG,VGB,92,VRG,vb,VI,BVI,1-284,VGB,VI,39,IVB,USD,VIRGIN ISLANDS (BRITISH),2,US Dollar,840,Territory of GB,Road Town,NA,.vg,en-VG,3577718,,A/B,110,60 Hz
+Brazil,Brazil,Brésil,BR,BRA,76,B,bl,BZ,BR,55,BRA,BR,37,BRA,BRL,BRAZIL,2,Brazilian Real,986,Yes,Brasilia,SA,.br,pt-BR/es/en/fr,3469034,D5,C/N,127/220,60 Hz
+British Virgin Islands,British Virgin Islands,Îlesierges britanniques,VG,VGB,92,VRG,vb,VI,BVI,1-284,VGB,VI,39,IVB,USD,VIRGIN ISLANDS (BRITISH),2,US Dollar,840,Territory of GB,Road Town,NA,.vg,en-VG,3577718,,A/B,110,60 Hz
 Brunei,Brunei Darussalam,Brunéi Darussalam,BN,BRN,96,BRU,bx,BD,BRU,673,BRU,BX,40,BRU,BND,BRUNEI DARUSSALAM,2,Brunei Dollar,96,Yes,Bandar Seri Begawan,AS,.bn,ms-BN/en-BN,1820814,D9,G,240,50 Hz
 Bulgaria,Bulgaria,Bulgarie,BG,BGR,100,BUL,bu,BU,BG,359,BUL,BU,41,BUL,BGN,BULGARIA,2,Bulgarian Lev,975,Yes,Sofia,EU,.bg,bg/tr-BG/rom,732800,E0,C/F,230,50 Hz
 Burkina Faso,Burkina Faso,Burkina Faso,BF,BFA,854,BFA,uv,HV,BF,226,BFA,UV,42,BUR,XOF,BURKINA FASO,0,CFA Franc BCEAO,952,Yes,Ouagadougou,AF,.bf,fr-BF,2361809,X2,C/E,220,50 Hz
@@ -35,7 +36,7 @@ Burundi,Burundi,Burundi,BI,BDI,108,BDI,bd,BI,RU,257,BDI,BY,43,BDI,BIF,BURUNDI,0,
 Cambodia,Cambodia,Cambodge,KH,KHM,116,CBG,cb,KP,K,855,CAM,CB,44,CAM,KHR,CAMBODIA,2,Riel,116,Yes,Phnom Penh,AS,.kh,km/fr/en,1831722,E3,A/C/G,230,50 Hz
 Cameroon,Cameroon,Cameroun,CM,CMR,120,CME,cm,CM,CAM,237,CMR,CM,45,CMR,XAF,CAMEROON,0,CFA Franc BEAC,950,Yes,Yaounde,AF,.cm,en-CM/fr-CM,2233387,E4,C/E,220,50 Hz
 Canada,Canada,Canada,CA,CAN,124,CAN,xxc,CN,CDN,1,CAN,CA,46,CAN,CAD,CANADA,2,Canadian Dollar,124,Yes,Ottawa,NA,.ca,en-CA/fr-CA/iu,6251999,,A/B,120,60 Hz
-Capeerde,Caboerde,Caboerde,CV,CPV,132,CPV,cv,CV,,238,CPV,CV,47,CPV,CVE,CABOERDE,2,Caboerde Escudo,132,Yes,Praia,AF,.cv,pt-CV,3374766,,C/F,220,50 Hz
+Cape Verde,Cabo Verde,Cabo Verde,CV,CPV,132,CPV,cv,CV,,238,CPV,CV,47,CPV,CVE,CABO VERDE,2,Caboerde Escudo,132,Yes,Praia,AF,.cv,pt-CV,3374766,,C/F,220,50 Hz
 Caribbean Netherlands,Bonaire/Sint Eustatius/Saba,Bonaire/Saint-Eustache/Saba,BQ,BES,535,ATN,ca,NU,NA,599,ANT,NL,176,AHO,USD,BONAIRE/ SINT EUSTATIUS AND SABA,2,US Dollar,840,Part of NL,,NA,.bq,nl/pap/en,7626844,,A/B/F,127/220,50 Hz
 Cayman Islands,Cayman Islands,Îles Caïmanes,KY,CYM,136,CYM,cj,GC,,1-345,CAY,CJ,48,CAY,KYD,CAYMAN ISLANDS,2,Cayman Islands Dollar,136,Territory of GB,George Town,NA,.ky,en-KY,3580718,E9,A/B,120,60 Hz
 Central African Republic,Central African Republic,République centrafricaine,CF,CAF,140,CAF,cx,CE,RCA,236,CTA,CT,49,CAF,XAF,CENTRAL AFRICAN REPUBLIC,0,CFA Franc BEAC,950,Yes,Bangui,AF,.cf,fr-CF/sg/ln/kg,239880,F0,C/E,220,50 Hz

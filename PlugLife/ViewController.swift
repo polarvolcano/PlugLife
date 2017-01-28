@@ -11,8 +11,27 @@ import UIKit
 
 class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UISearchBarDelegate {
     
+    var changeBaseCountrySwitch: Bool = false
+    @IBAction func changeBaseCountry(_ sender: Any) {
+        if changeBaseCountrySwitch == false {
+            changeBaseCountrySwitch = true
+            instructionLabel.text = "Select Your Base Country Below..."
+            searchBar.placeholder = "Where are you travelling from?"
+            baseCountryFlag.alpha = 0.4
+            instructionLabel.backgroundColor = UIColor(red:0.18, green:0.56, blue:0.98, alpha:1.0)
+        } else {
+            changeBaseCountrySwitch = false
+            instructionLabel.text = "Select Your Destination Country Below..."
+            searchBar.placeholder = "What country are you going to?"
+            baseCountryFlag.alpha = 1
+            instructionLabel.backgroundColor = .white
+        }
+    }
+    @IBOutlet weak var baseCountryFlag: UIButton!
+    @IBOutlet weak var baseCountryLabel: UILabel!
     @IBOutlet weak var collection: UICollectionView!
     
+    @IBOutlet weak var instructionLabel: UILabel!
     @IBOutlet weak var searchBar: UISearchBar!
     
     //var countries = [Country]()
@@ -25,9 +44,26 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         collection.delegate = self
         searchBar.delegate = self
         
+        
+        
         searchBar.returnKeyType = UIReturnKeyType.done 
         parseCountryCSV()
+        currentCountry = countrylist.filter({$0.isoCode.range(of: baseLocale.regionCode!) != nil})[0]
+        
+        print(currentCountry.isoCode.lowercased())
+        //baseCountryFlag.setImage(UIImage(named: "\(currentCountry.isoCode.lowercased())"), for: .normal)
+        reloadCurrentCountry()
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    func reloadCurrentCountry() {
+        baseCountryLabel.text = currentCountry.name
+        var cntryimg = UIImage(named: "\(currentCountry.isoCode.lowercased())")
+        baseCountryFlag.setBackgroundImage(cntryimg, for: .normal)
+        baseCountryFlag.layer.borderWidth = 3
+        baseCountryFlag.layer.borderColor = UIColor.black.cgColor
+        baseCountryFlag.layer.cornerRadius = 4
+        baseCountryFlag.clipsToBounds = true
     }
     
     
@@ -82,6 +118,26 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if changeBaseCountrySwitch == true {
+            
+            
+            if inSearchMode {
+                currentCountry = filteredCountries[indexPath.row]
+            } else {
+                
+                currentCountry = countrylist[indexPath.row]
+            }
+            reloadCurrentCountry()
+            changeBaseCountrySwitch = false
+            instructionLabel.text = "Select Your Destination Country Below..."
+            searchBar.placeholder = "What country are you going to?"
+            baseCountryFlag.alpha = 1
+            instructionLabel.backgroundColor = .white
+            
+        } else {
+            
+        
+        
         var country: Country!
         
         if inSearchMode {
@@ -91,6 +147,8 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             country = countrylist[indexPath.row]
         }
         performSegue(withIdentifier: "CountryDetailVC", sender: country)
+        
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -110,7 +168,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 100, height: 100)
+        return CGSize(width: 73, height: 108)
     }
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
@@ -143,4 +201,6 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
 
 
 }
+
+
 
