@@ -6,6 +6,8 @@
 //  Copyright © 2017 Adam McRae. All rights reserved.
 //
 
+//View not yet implemented. Will be used to show exchange rates and other info
+
 import UIKit
 
 class CountryStatsVC: UIViewController {

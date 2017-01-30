@@ -21,7 +21,7 @@ class CompatNote {
     init(plug: Country, socket: Country) {
         
         if socket.isoCode == "AA" {
-            compatType.append("")
+            compatType.append("plugWarn")
             infoText.append("You are currently viewing all plug types available worldwide. For compatibility recommendations, return to the previous screen and select a destination country")
             self._plugTypes = plug.plugType.components(separatedBy: "/")
             self._socketTypes = socket.plugType.components(separatedBy: "/")
@@ -79,7 +79,7 @@ class CompatNote {
                     }
                     if plugs == "A" && compatibleplug == "A" {
                         compatType.append("plugWarn")
-                        infoText.append("If your Type A plugs were purchased in North America, they may be difficult to fit in any older Type A sockets in \(socket.name)")
+                        infoText.append("Newer Type A plugs have a slightly wider pin and may be difficult to fit in any older Type A sockets in \(socket.name)")
                         compat = true
                     }
                 }

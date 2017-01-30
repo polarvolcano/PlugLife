@@ -55,7 +55,7 @@ Croatia,Croatia,Croatie,HR,HRV,191,HRV,ci,RH,HR,385,CRO,HR,62,CRO,HRK,CROATIA,2,
 Cuba,Cuba,Cuba,CU,CUB,192,CUB,cu,CU,C,53,CUB,CU,63,CUB,CUP,CUBA,2,Cuban Peso,192,Yes,Havana,NA,.cu,es-CU,3562981,G3,A/B,110,60 Hz
 Curaçao,Curaçao,Curaçao,CW,CUW,531,,co,,,599,,UC,,,ANG,CURAÇAO,2,Netherlands Antillean Guilder,532,Part of NL,Willemstad,NA,.cw,nl/pap,7626836,,A/B/F,127/220,50 Hz
 Cyprus,Cyprus,Chypre,CY,CYP,196,CYP,cy,CY,CY,357,CYP,CY,64,CYP,EUR,CYPRUS,2,Euro,978,Yes,Nicosia,EU,.cy,el-CY/tr-CY/en,146669,G4,G,240,50 Hz
-Czechia,Czechia,Tchéquie,CZ,CZE,203,CZE,xr,CZ,CZ,420,CZE,EZ,65,CZE,CZK,CZECH REPUBLIC,2,Czech Koruna,203,Yes,Prague,EU,.cz,cs/sk,3077311,2N,C/E,230,50 Hz
+Czech Republic,Czechia,Tchéquie,CZ,CZE,203,CZE,xr,CZ,CZ,420,CZE,EZ,65,CZE,CZK,CZECH REPUBLIC,2,Czech Koruna,203,Yes,Prague,EU,.cz,cs/sk,3077311,2N,C/E,230,50 Hz
 Côte d’Ivoire,Côte d'Ivoire,Côte d'Ivoire,CI,CIV,384,CTI,iv,IV,CI,225,CIV,IV,66,CIV,XOF,CÔTE D'IVOIRE,0,CFA Franc BCEAO,952,Yes,Yamoussoukro,AF,.ci,fr-CI,2287781,,C/E,230,50 Hz
 Denmark,Denmark,Danemark,DK,DNK,208,DNK,dk,DN,DK,45,DEN,DA,69,DEN,DKK,DENMARK,2,Danish Krone,208,Yes,Copenhagen,EU,.dk,da-DK/en/fo/de-DK,2623032,G7,C/F/E/K,230,50Hz
 Djibouti,Djibouti,Djibouti,DJ,DJI,262,DJI,ft,DJ,,253,DJI,DJ,70,DJI,DJF,DJIBOUTI,0,Djibouti Franc,262,Yes,Djibouti,AF,.dj,fr-DJ/ar/so-DJ/aa,223816,1G,C/E,220,50 Hz
@@ -213,7 +213,7 @@ São Tomé & Príncipe,Sao Tome and Principe,Sao Tomé-et-Principe,ST,STP,678,ST
 Taiwan,,,TW,TWN,158,,ch,,RC,886,TPE,TW,925,TPE,TWD,,,New Taiwan Dollar,,Yes,Taipei,AS,.tw,zh-TW/zh/nan/hak,1668284,,A/B,110,60 Hz
 Tajikistan,Tajikistan,Tadjikistan,TJ,TJK,762,TJK,ta,TA,TJ,992,TJK,TI,239,TJK,TJS,TAJIKISTAN,2,Somoni,972,Yes,Dushanbe,AS,.tj,tg/ru,1220409,2D,C/F/I,220,50 Hz
 Tanzania,United Republic of Tanzania,République-Unie de Tanzanie,TZ,TZA,834,TZA,tz,TN,EAT,255,TAN,TZ,257,TAN,TZS,TANZANIA/ UNITED REPUBLIC OF,2,Tanzanian Shilling,834,Yes,Dodoma,AF,.tz,sw-TZ/en/ar,149590,W0,D/G,230,50 Hz
-Thailand,Thailand,Thaïlande,TH,THA,764,THA,th,TH,T,66,THA,TH,240,THA,THB,THAILAND,2,Baht,764,Yes,Bangkok,AS,.th,th/en,1605651,W1,A/B/C/F,220,50 Hz
+Thailand,Thailand,Thaïlande,TH,THA,764,THA,th,TH,T,66,THA,TH,240,THA,THB,THAILAND,2,Baht,764,Yes,Bangkok,AS,.th,th/en,1605651,W1,A/B/C/F/O,220,50 Hz
 Timor-Leste,Timor-Leste,Timor-Leste,TL,TLS,626,TLS,em,TM,,670,TLS,TT,242,TLS,USD,TIMOR-LESTE,2,US Dollar,840,Yes,Dili,OC,.tl,tet/pt-TL/id/en,1966436,Z3,C/E/F/I,220,50 Hz
 Togo,Togo,Togo,TG,TGO,768,TGO,tg,TG,TG,228,TOG,TO,243,TOG,XOF,TOGO,0,CFA Franc BCEAO,952,Yes,Lome,AF,.tg,fr-TG/ee/hna/kbp/dag/ha,2363686,W2,C,220,50 Hz
 Tokelau,Tokelau,Tokelau,TK,TKL,772,TKL,tl,TK,NZ,690,TKL,TL,244,,NZD,TOKELAU,2,New Zealand Dollar,554,Territory of NZ,,OC,.tk,tkl/en-TK,4031074,W3,I,230,50 Hz
@@ -225,8 +225,8 @@ Turkmenistan,Turkmenistan,Turkménistan,TM,TKM,795,TKM,tk,TR,TM,993,TKM,TX,250,T
 Turks & Caicos Islands,Turks and Caicos Islands,Îles Turques-et-Caïques,TC,TCA,796,TCA,tc,TI,,1-649,TCA,TK,251,TKS,USD,TURKS AND CAICOS ISLANDS,2,US Dollar,840,Territory of GB,Cockburn Town,NA,.tc,en-TC,3576916,W7,A/B,120,60 Hz
 Tuvalu,Tuvalu,Tuvalu,TV,TUV,798,TUV,tv,TV,,688,TUV,TV,252,TUV,AUD,TUVALU,2,Australian Dollar,36,Yes,Funafuti,OC,.tv,tvl/en/sm/gil,2110297,2G,I,220,50 Hz
 U.S.irgin Islands,United Statesirgin Islands,Îlesierges américaines,VI,VIR,850,VIR,vi,VI,USA,1-340,VIR,VQ,258,ISV,USD,VIRGIN ISLANDS (U.S.),2,US Dollar,840,Territory of US,Charlotte Amalie,NA,.vi,en-VI,4796775,,A/B,110,60 Hz
-UK,United Kingdom of Great Britain and Northern Ireland,Royaume-Uni de Grande-Bretagne et d'Irlande du Nord,GB,GBR,826,G,xxk,UK,GB,44,ENG/NIR/SCO/WAL,UK,256,GBR,GBP,UNITED KINGDOM,2,Pound Sterling,826,Yes,London,EU,.uk,en-GB/cy-GB/gd,2635167,X0,G,230,50 Hz
-US,United States of America,États-Unis d'Amérique,US,USA,840,USA,xxu,US,USA,1,USA,US,259,USA,USD,UNITED STATES,2,US Dollar,840,Yes,Washington,NA,.us,en-US/es-US/haw/fr,6252001,,A/B,120,60 Hz
+United Kingdom,United Kingdom of Great Britain and Northern Ireland,Royaume-Uni de Grande-Bretagne et d'Irlande du Nord,GB,GBR,826,G,xxk,UK,GB,44,ENG/NIR/SCO/WAL,UK,256,GBR,GBP,UNITED KINGDOM,2,Pound Sterling,826,Yes,London,EU,.uk,en-GB/cy-GB/gd,2635167,X0,G,230,50 Hz
+United States of America,United States of America,États-Unis d'Amérique,US,USA,840,USA,xxu,US,USA,1,USA,US,259,USA,USD,UNITED STATES,2,US Dollar,840,Yes,Washington,NA,.us,en-US/es-US/haw/fr,6252001,,A/B,120,60 Hz
 Uganda,Uganda,Ouganda,UG,UGA,800,UGA,ug,UG,EAU,256,UGA,UG,253,UGA,UGX,UGANDA,0,Uganda Shilling,800,Yes,Kampala,AF,.ug,en-UG/lg/sw/ar,226074,W9,G,240,50 Hz
 Ukraine,Ukraine,Ukraine,UA,UKR,804,UKR,un,UR,UA,380,UKR,UP,254,UKR,UAH,UKRAINE,2,Hryvnia,980,Yes,Kiev,EU,.ua,uk/ru-UA/rom/pl/hu,690791,2H,C/F,220,50 Hz
 United Arab Emirates,United Arab Emirates,Émirats arabes unis,AE,ARE,784,UAE,ts,ER,,971,UAE,AE,255,UAE,AED,UNITED ARAB EMIRATES,2,UAE Dirham,784,Yes,Abu Dhabi,AS,.ae,ar-AE/fa/en/hi/ur,290557,C0,C/D/G,220,50 Hz

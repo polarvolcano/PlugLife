@@ -10,15 +10,32 @@ import Foundation
 import UIKit
 import Alamofire
 
-class CountryDetailVC: UIViewController,UIWebViewDelegate, UIScrollViewDelegate, UITableViewDelegate, UITableViewDataSource {
-    var country: Country!
+class CountryDetailVC: UIViewController,UIWebViewDelegate, UIScrollViewDelegate, UITableViewDelegate, UITableViewDataSource, PlugDetailVCDelegate {
     
+    var country: Country!
     var plugCompat = false
     var voltCompat = false
     var totalCompat = false
     //var sendURL = String()
     var plugarray = [Plug]()
     
+    func plugDetailVCSelectCountry(value: Country) {
+    // This function is triggered by a country being selected from PlugDetailVC View Controller
+    // The value for 'country' is changed and the entire view is updated
+        
+    // Remove all existing subviews already loaded
+        scrollView.subviews.forEach({ $0.removeFromSuperview() })
+        stackView.subviews.forEach({ $0.removeFromSuperview() })
+        stackViewWidth.constant = 0
+        
+        
+        country = value
+        loadData()
+        self.tableView.reloadData()
+        print(value.isoCode)
+    }
+    
+ 
     
     let length: CGFloat = 200
     
@@ -26,7 +43,8 @@ class CountryDetailVC: UIViewController,UIWebViewDelegate, UIScrollViewDelegate,
     
     @IBOutlet weak var stackViewWidth: NSLayoutConstraint!
     
-    @IBAction func showBaseCountryStats(_ sender: Any) {
+    @IBAction func showBaseCountryStats(_ sender: Any) { // Tapping on the home country flag shows the stats for that country
+
         nameLbl.text = currentCountry.name
         let img = UIImage(named: "\(currentCountry.isoCode.lowercased())")
         plugImg.image = img
@@ -67,28 +85,29 @@ class CountryDetailVC: UIViewController,UIWebViewDelegate, UIScrollViewDelegate,
     @IBOutlet weak var plugImg: UIImageView!
     @IBOutlet weak var scrollView: UIScrollView!
     
-    @IBAction func showPopup(sender: UIButton) {
+    @IBAction func showPopup(sender: UIButton) {  //Launches a pop-up view which depends on the tag of the button pressed, the tag corresponds to an array of plugs, index at 'tag' is sent to the pop-up view controller
+        
         print(sender.tag)
         //let popOverVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "plugPopUp") as! PopUpViewController
         let popOverVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "plugDetail") as! PlugDetailVC
         popOverVC.stringPassed = self.plugarray[sender.tag]
         self.addChildViewController(popOverVC)
         popOverVC.view.frame = self.view.frame
+        popOverVC.delegate = self;
         
         self.view.addSubview(popOverVC.view)
         popOverVC.didMove(toParentViewController: self)
         
     }
     
-  //  let currentCountry = countrylist.filter({$0.isoCode.range(of: baseLocale.regionCode!) != nil})[0]
+
+    
     
     
     
     override func viewDidLoad() {
         
-       
-        
-       // print(compatnotes.infoText[0])
+
         let img = UIImage(named: "\(currentCountry.isoCode.lowercased())")
         
         baseCountryFlag.setImage(img, for: .normal)
@@ -105,19 +124,19 @@ class CountryDetailVC: UIViewController,UIWebViewDelegate, UIScrollViewDelegate,
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
-        nameLbl.text = country.name
-        
-        
-        
 
-        // Do any additional setup after loading the view.
     }
     
     
     
-    override func viewDidAppear(_ animated: Bool) {
-       // let voltcompare1 = Float(String(country.voltage.characters.prefix(3)))!
-       // let voltcompare2 = Float(String(currentCountry.voltage.characters.prefix(3)))!
+    override func viewDidAppear(_ animated: Bool) {  //load all the data into the view. Using viewDidAppear due to issues with the scrollView screen bounds not being loaded if done in viewdidload
+        loadData()
+        
+    }
+    
+    
+    func loadData() {
+        self.plugarray.removeAll()
         let img = UIImage(named: "\(country.isoCode.lowercased())")
         infoView.layer.borderWidth = 3
         infoView.layer.borderColor = UIColor.black.cgColor
@@ -130,21 +149,15 @@ class CountryDetailVC: UIViewController,UIWebViewDelegate, UIScrollViewDelegate,
         plugImg.layer.cornerRadius = 4
         plugImg.clipsToBounds = true
         
-        //var plugarray = [Plug]()
+
         let plugs = country.plugType.components(separatedBy: "/")
         let homeplugs = currentCountry.plugType.components(separatedBy: "/")
-    
+        
         for i in 0...plugs.count-1 {
-            //self.addimage(plug: plugs[i], index: i)
             self.addScrollView(plug: plugs[i], index: i)
             let plug = Plug(plugType: plugs[i])
             self.plugarray.append(plug)
-            print(self.plugarray[i].iecURL)
             
-            if currentCountry.plugType.range(of: plugs[i]) != nil {
-                plugCompat = true
-                
-            }
             
             
             
@@ -154,19 +167,16 @@ class CountryDetailVC: UIViewController,UIWebViewDelegate, UIScrollViewDelegate,
             self.addimage(plug: homeplugs[i], index: (plugs.count+i))
             let plug = Plug(plugType: homeplugs[i])
             self.plugarray.append(plug)
-            }
-            
-            
-            
-        
-        
-        
-        
-        
-        if currentCountry.plugType.range(of: country.plugType) != nil {
-            totalCompat = true
         }
         
+        
+        
+        
+        
+        
+        
+        
+        nameLbl.text = country.name
         plugTypesLbl.text = "Plug Types: \(country.plugType)"
         
         voltageLbl.text = "Voltage: \(country.voltage)"
@@ -178,18 +188,7 @@ class CountryDetailVC: UIViewController,UIWebViewDelegate, UIScrollViewDelegate,
         print("\(Locale.current.regionCode)")
         
         print(currentCountry.name)
-   //     if voltcompare1/voltcompare2 > 0.9 && voltcompare1/voltcompare2 < 1.1 {
-   //         voltCompat = true
-   //         print("voltage within range")
-   //
-   //     }
-        
-        
-        
     }
-    
-    
-    
 
 
     @IBAction func btnPress(_ sender: UIButton) {
@@ -214,13 +213,6 @@ class CountryDetailVC: UIViewController,UIWebViewDelegate, UIScrollViewDelegate,
         
         scrollView.contentSize.width = scrollView.frame.size.width * CGFloat(index+1)
         print("\(plug)2")
-        //let imgview = UIImageView(image: img)
-        //btn.imageView?.contentMode = UIViewContentMode.scaleAspectFit
-        //let imgview = UIImageView(image: img)
-        //imgview.contentMode = UIViewContentMode.scaleAspectFit
-        //let webView = UIWebView()
-        //webView.delegate = self
-        
         scrollView.addSubview(btn)
         
         
@@ -231,8 +223,7 @@ class CountryDetailVC: UIViewController,UIWebViewDelegate, UIScrollViewDelegate,
         let img = UIImage(named: "\(plug)2")
         let btn = UIButton()
         btn.setImage(img, for: .normal)
-       // btn.frame.size.height = 40
-       // btn.frame.size.height = 40
+
         btn.tag = index
         btn.addTarget(self, action: #selector(showPopup), for: UIControlEvents.touchUpInside)
         btn.imageView?.contentMode = UIViewContentMode.scaleAspectFit
@@ -246,7 +237,15 @@ class CountryDetailVC: UIViewController,UIWebViewDelegate, UIScrollViewDelegate,
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let currentPagefloat: CGFloat = floor((scrollView.contentOffset.x-scrollView.frame.size.width/2)/scrollView.frame.size.width)+1
         let currentPage = Int(currentPagefloat)
+        print("Plug Array Length \(plugarray.count)")
+        print(currentPage)
+        if plugarray.count > 0 {
+            
+        
+        
+        
         plugLbl.text = "Plug Type \(plugarray[currentPage].plugType)"
+        }
         
     }
     
@@ -264,11 +263,9 @@ class CountryDetailVC: UIViewController,UIWebViewDelegate, UIScrollViewDelegate,
         let compatnotes = CompatNote(plug: currentCountry, socket: country)
         if let cell = tableView.dequeueReusableCell(withIdentifier: "compatibleCell", for: indexPath) as? CompatibleNotesCell {
             
-            //let country = filteredCountries[indexPath.row]
             cell.configureCell(text: "\(compatnotes.infoText[indexPath.row]!)", image: "\(compatnotes.compatType[indexPath.row]!)")
-            //cell.selectionStyle
             return cell
-            //return CompatibleNotesCell()
+
         }else {
             return CompatibleNotesCell()
         }

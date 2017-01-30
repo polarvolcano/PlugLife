@@ -8,8 +8,13 @@
 
 import UIKit
 
+protocol PlugDetailVCDelegate {
+    func plugDetailVCSelectCountry(value: Country)
+}
+
 class PlugDetailVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UITableViewDelegate, UITableViewDataSource {
     
+    var delegate : PlugDetailVCDelegate?
     
     @IBOutlet weak var plugTypeLabel2: UILabel!
     @IBOutlet weak var plugTypeLabel: UILabel!
@@ -39,7 +44,7 @@ class PlugDetailVC: UIViewController, UICollectionViewDelegate, UICollectionView
     var filteredCountries = [Country]()
     
     @IBAction func moreInfo(_ sender: Any) {
-        //self.removeAnimate()
+  
         let popOverVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "plugPopUp") as! PopUpViewController
         popOverVC.stringPassed = self.stringPassed
         self.addChildViewController(popOverVC)
@@ -58,11 +63,11 @@ class PlugDetailVC: UIViewController, UICollectionViewDelegate, UICollectionView
     @IBOutlet weak var popView: UIView!
     
 
-    //var imagepath: String = ""
+
     
     
-    var stringPassed = Plug(plugType: "A")
-    // var pluginfo = Plug()
+    var stringPassed = Plug(plugType: "A") //Initiating variable to be passed from CountryDetailVC
+
     
     
     override func viewDidLoad() {
@@ -71,7 +76,7 @@ class PlugDetailVC: UIViewController, UICollectionViewDelegate, UICollectionView
         plugImage.layer.borderColor = UIColor.black.cgColor
         plugImage.layer.cornerRadius = 4
         plugImage.clipsToBounds = true
-        //print(stringPassed)
+
 
         filteredCountries = countrylist.filter({$0.plugType.range(of: stringPassed.plugType) != nil})
         self.showAnimate()
@@ -82,12 +87,7 @@ class PlugDetailVC: UIViewController, UICollectionViewDelegate, UICollectionView
         tableView.delegate = self
         tableView.dataSource = self
         self.view.backgroundColor = UIColor.black.withAlphaComponent(0.7)
-        //self.scrapeIEC()
-        
 
-        //tableView.reloadData()
-        
-        // Do any additional setup after loading the view.
     }
     
     override func didReceiveMemoryWarning() {
@@ -98,7 +98,9 @@ class PlugDetailVC: UIViewController, UICollectionViewDelegate, UICollectionView
     override func viewWillAppear(_ animated: Bool) {
         var compattext = "Socket compatible with plug types"
         for types in stringPassed.compatiblePlugs {
+            if String(types.characters.prefix(1)) != "?" {
             compattext += " \(types)"
+            }
         }
         plugTypeLabel.text = "Plug Type: \(stringPassed.plugType)"
         compatLabel.text = compattext
@@ -204,11 +206,11 @@ class PlugDetailVC: UIViewController, UICollectionViewDelegate, UICollectionView
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        
+        self.delegate?.plugDetailVCSelectCountry(value: filteredCountries[indexPath.row])
+        self.removeAnimate()
     }
 
-    
-
+   
     
 
     

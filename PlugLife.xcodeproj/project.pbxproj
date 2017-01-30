@@ -21,7 +21,6 @@
 		E2438AF61E27421100652EB0 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2438AF51E27421100652EB0 /* Country.swift */; };
 		E2438AF81E27472B00652EB0 /* CountryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2438AF71E27472B00652EB0 /* CountryCell.swift */; };
 		E2438AFC1E2755EA00652EB0 /* CountryDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2438AFB1E2755EA00652EB0 /* CountryDetailVC.swift */; };
-		E2592EF41E2C55A300F53D4B /* PlugDescriptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2592EF31E2C55A300F53D4B /* PlugDescriptions.swift */; };
 		E2592EF61E2C8C3E00F53D4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2592EF51E2C8C3E00F53D4B /* LaunchScreen.storyboard */; };
 		E2592EF81E2C90D900F53D4B /* AnimationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2592EF71E2C90D900F53D4B /* AnimationVC.swift */; };
 		E2A550071E29CC25001B65D1 /* country-codes.csv in Resources */ = {isa = PBXBuildFile; fileRef = E2A550061E29CC25001B65D1 /* country-codes.csv */; };
@@ -51,7 +50,6 @@
 		E2438AF51E27421100652EB0 /* Country.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 		E2438AF71E27472B00652EB0 /* CountryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryCell.swift; sourceTree = "<group>"; };
 		E2438AFB1E2755EA00652EB0 /* CountryDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryDetailVC.swift; sourceTree = "<group>"; };
-		E2592EF31E2C55A300F53D4B /* PlugDescriptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlugDescriptions.swift; sourceTree = "<group>"; };
 		E2592EF51E2C8C3E00F53D4B /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E2592EF71E2C90D900F53D4B /* AnimationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationVC.swift; sourceTree = "<group>"; };
 		E2A550061E29CC25001B65D1 /* country-codes.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "country-codes.csv"; sourceTree = "<group>"; };
@@ -125,7 +123,6 @@
 			children = (
 				E2438AF11E273F7E00652EB0 /* csv.swift */,
 				E2438AF31E273F8300652EB0 /* Constants.swift */,
-				E2592EF31E2C55A300F53D4B /* PlugDescriptions.swift */,
 			);
 			name = Util;
 			sourceTree = "<group>";
@@ -321,7 +318,6 @@
 				E2438AF61E27421100652EB0 /* Country.swift in Sources */,
 				E2B834231E2895FA0003A08D /* Plug.swift in Sources */,
 				E2E53BDD1E31E47D00347359 /* PlugDetailCell.swift in Sources */,
-				E2592EF41E2C55A300F53D4B /* PlugDescriptions.swift in Sources */,
 				E2E53BE31E346EA400347359 /* CompatNote.swift in Sources */,
 				E2A9E1FB1E29F74D00B5521C /* PopUpViewController.swift in Sources */,
 				E2592EF81E2C90D900F53D4B /* AnimationVC.swift in Sources */,
