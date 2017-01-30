@@ -113,6 +113,8 @@ class CountryDetailVC: UIViewController,UIWebViewDelegate, UIScrollViewDelegate,
         // Do any additional setup after loading the view.
     }
     
+    
+    
     override func viewDidAppear(_ animated: Bool) {
        // let voltcompare1 = Float(String(country.voltage.characters.prefix(3)))!
        // let voltcompare2 = Float(String(currentCountry.voltage.characters.prefix(3)))!
@@ -185,6 +187,8 @@ class CountryDetailVC: UIViewController,UIWebViewDelegate, UIScrollViewDelegate,
         
         
     }
+    
+    
     
 
 
@@ -262,6 +266,7 @@ class CountryDetailVC: UIViewController,UIWebViewDelegate, UIScrollViewDelegate,
             
             //let country = filteredCountries[indexPath.row]
             cell.configureCell(text: "\(compatnotes.infoText[indexPath.row]!)", image: "\(compatnotes.compatType[indexPath.row]!)")
+            //cell.selectionStyle
             return cell
             //return CompatibleNotesCell()
         }else {

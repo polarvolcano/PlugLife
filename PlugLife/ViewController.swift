@@ -15,14 +15,14 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     @IBAction func changeBaseCountry(_ sender: Any) {
         if changeBaseCountrySwitch == false {
             changeBaseCountrySwitch = true
-            instructionLabel.text = "Select Your Base Country Below..."
+            instructionLabel.text = "Select Your Base Region Below..."
             searchBar.placeholder = "Where are you travelling from?"
             baseCountryFlag.alpha = 0.4
             instructionLabel.backgroundColor = UIColor(red:0.18, green:0.56, blue:0.98, alpha:1.0)
         } else {
             changeBaseCountrySwitch = false
-            instructionLabel.text = "Select Your Destination Country Below..."
-            searchBar.placeholder = "What country are you going to?"
+            instructionLabel.text = "Select Your Destination Below..."
+            searchBar.placeholder = "Where are you going?"
             baseCountryFlag.alpha = 1
             instructionLabel.backgroundColor = .white
         }
@@ -120,17 +120,18 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if changeBaseCountrySwitch == true {
             
-            
+            if indexPath.row != 0 {
             if inSearchMode {
                 currentCountry = filteredCountries[indexPath.row]
             } else {
                 
                 currentCountry = countrylist[indexPath.row]
             }
+            }
             reloadCurrentCountry()
             changeBaseCountrySwitch = false
-            instructionLabel.text = "Select Your Destination Country Below..."
-            searchBar.placeholder = "What country are you going to?"
+            instructionLabel.text = "Select Your Destination Below..."
+            searchBar.placeholder = "Where are you going?"
             baseCountryFlag.alpha = 1
             instructionLabel.backgroundColor = .white
             

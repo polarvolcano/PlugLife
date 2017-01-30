@@ -217,7 +217,7 @@
 				TargetAttributes = {
 					E2438AD61E273E6100652EB0 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = VHG46T8GSP;
+						DevelopmentTeam = WB8FM48Z8U;
 						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
@@ -451,10 +451,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = VHG46T8GSP;
+				DEVELOPMENT_TEAM = WB8FM48Z8U;
 				INFOPLIST_FILE = PlugLife/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.polarvolcano.pluglife.PlugLife;
+				PRODUCT_BUNDLE_IDENTIFIER = com.polarvolcano.plug;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -466,10 +466,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = VHG46T8GSP;
+				DEVELOPMENT_TEAM = WB8FM48Z8U;
 				INFOPLIST_FILE = PlugLife/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.polarvolcano.pluglife.PlugLife;
+				PRODUCT_BUNDLE_IDENTIFIER = com.polarvolcano.plug;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};

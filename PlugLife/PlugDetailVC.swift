@@ -203,20 +203,11 @@ class PlugDetailVC: UIViewController, UICollectionViewDelegate, UICollectionView
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.parent?.dismiss(animated: true)
-        self.removeAnimate()
-        performSegue(withIdentifier: "CountryDetailVC", sender: country)
+        
+        
     }
 
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "CountryDetailVC" {
-            if let detailsVC = segue.destination as? CountryDetailVC {
-                if let country = sender as? Country {
-                    detailsVC.country = country
-                }
-            }
-        }
-    }
+    
 
     
 

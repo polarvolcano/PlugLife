@@ -57,7 +57,12 @@ class CompatNote {
         
         if plug.plugType == socket.plugType {
             compatType.append("plugCheck")
-            infoText.append("Your plugs are completely compatible with the sockets in \(socket.name)")
+            infoText.append("Your plugs should be completely compatible with the sockets in \(socket.name)")
+            if String(plug.plugType.characters.prefix(1)) == "A" && String(socket.plugType.characters.prefix(1)) == "A" {
+                compatType.append("plugWarn")
+                infoText.append("If your Type A plugs were purchased in North America, they may be difficult to fit in older Type A sockets in \(socket.name)")
+                
+            }
         } else {
             
         
@@ -66,8 +71,15 @@ class CompatNote {
                 var compat = false
                 for compatibleplug in compatiblePlug[sockets]! {
                     if plugs == compatibleplug {
+                        
                         compatType.append("plugCheck")
                         infoText.append("Your Type \(plugs) plugs are compatible with the Type \(sockets) sockets in \(socket.name)")
+                        compat = true
+                        
+                    }
+                    if plugs == "A" && compatibleplug == "A" {
+                        compatType.append("plugWarn")
+                        infoText.append("If your Type A plugs were purchased in North America, they may be difficult to fit in any older Type A sockets in \(socket.name)")
                         compat = true
                     }
                 }
