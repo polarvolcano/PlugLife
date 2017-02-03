@@ -27,79 +27,79 @@
     {
       "size" : "40x40",
       "idiom" : "iphone",
-      "filename" : "AppIcon2-5.png",
+      "filename" : "PlugLifeAppIcon80.png",
       "scale" : "2x"
     },
     {
       "size" : "40x40",
       "idiom" : "iphone",
-      "filename" : "AppIcon2-16.png",
+      "filename" : "PlugLifeAppIcon120.png",
       "scale" : "3x"
     },
     {
       "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "AppIcon2-6.png",
+      "filename" : "PlugLifeAppIcon120-1.png",
       "scale" : "2x"
     },
     {
       "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "AppIcon2-12.png",
+      "filename" : "PlugLifeAppIcon180.png",
       "scale" : "3x"
     },
     {
       "size" : "20x20",
       "idiom" : "ipad",
-      "filename" : "AppIcon2-7.png",
+      "filename" : "PlugLifeAppIcon20.png",
       "scale" : "1x"
     },
     {
       "size" : "20x20",
       "idiom" : "ipad",
-      "filename" : "AppIcon2-1.png",
+      "filename" : "PlugLifeAppIcon40.png",
       "scale" : "2x"
     },
     {
       "size" : "29x29",
       "idiom" : "ipad",
-      "filename" : "AppIcon2-11.png",
+      "filename" : "PlugLifeAppIcon29.png",
       "scale" : "1x"
     },
     {
       "size" : "29x29",
       "idiom" : "ipad",
-      "filename" : "AppIcon2-8.png",
+      "filename" : "PlugLifeAppIcon58.png",
       "scale" : "2x"
     },
     {
       "size" : "40x40",
       "idiom" : "ipad",
-      "filename" : "AppIcon2-2.png",
+      "filename" : "PlugLifeAppIcon40-1.png",
       "scale" : "1x"
     },
     {
       "size" : "40x40",
       "idiom" : "ipad",
-      "filename" : "AppIcon2-4.png",
+      "filename" : "PlugLifeAppIcon80-1.png",
       "scale" : "2x"
     },
     {
       "size" : "76x76",
       "idiom" : "ipad",
-      "filename" : "AppIcon2-13.png",
+      "filename" : "PlugLifeAppIcon76.png",
       "scale" : "1x"
     },
     {
       "size" : "76x76",
       "idiom" : "ipad",
-      "filename" : "AppIcon2-14.png",
+      "filename" : "PlugLifeAppIcon152.png",
       "scale" : "2x"
     },
     {
       "size" : "83.5x83.5",
       "idiom" : "ipad",
-      "filename" : "AppIcon2-15.png",
+      "filename" : "PlugLifeAppIcon167.png",
       "scale" : "2x"
     }
   ],

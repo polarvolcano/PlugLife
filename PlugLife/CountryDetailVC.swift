@@ -36,6 +36,9 @@ class CountryDetailVC: UIViewController,UIWebViewDelegate, UIScrollViewDelegate,
     }
     
  
+    @IBOutlet weak var backbtn: UIButton!
+    
+    
     
     let length: CGFloat = 200
     
@@ -124,6 +127,11 @@ class CountryDetailVC: UIViewController,UIWebViewDelegate, UIScrollViewDelegate,
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
+        
+        backbtn.layer.borderWidth = 3
+        backbtn.layer.borderColor = UIColor.black.cgColor
+        backbtn.layer.cornerRadius = 4
+        backbtn.clipsToBounds = true
 
     }
     
@@ -223,6 +231,10 @@ class CountryDetailVC: UIViewController,UIWebViewDelegate, UIScrollViewDelegate,
         let img = UIImage(named: "\(plug)2")
         let btn = UIButton()
         btn.setImage(img, for: .normal)
+        btn.layer.borderWidth = 3
+        btn.layer.borderColor = UIColor.black.cgColor
+        btn.layer.cornerRadius = 4
+        btn.clipsToBounds = true
 
         btn.tag = index
         btn.addTarget(self, action: #selector(showPopup), for: UIControlEvents.touchUpInside)

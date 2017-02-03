@@ -201,7 +201,7 @@ St. Kitts & Nevis,Saint Kitts and Nevis,Saint-Kitts-et-Nevis,KN,KNA,659,KNA,xd,A
 St. Lucia,Saint Lucia,Sainte-Lucie,LC,LCA,662,LCA,xk,LC,WL,1-758,LCA,ST,209,LCA,XCD,SAINT LUCIA,2,East Caribbean Dollar,951,Yes,Castries,NA,.lc,en-LC,3576468,U9,G,240,50 Hz
 St. Martin,Saint Martin (French part),Saint-Martin (partie française),MF,MAF,663,,st,,,590,,RN,,,EUR,SAINT MARTIN (FRENCH PART),2,Euro,978,Part of FR,Marigot,NA,.gp,fr,3578421,,E,220,60 Hz
 St. Pierre & Miquelon,Saint Pierre and Miquelon,Saint-Pierre-et-Miquelon,PM,SPM,666,SPM,xl,FP,F,508,SPM,SB,210,SPM,EUR,SAINT PIERRE AND MIQUELON,2,Euro,978,Part of FR,Saint-Pierre,NA,.pm,fr-PM,3424932,V0,E,230,50 Hz
-St.incent & Grenadines,Saintincent and the Grenadines,Saint-Vincent-et-les Grenadines,VC,VCT,670,VCT,xm,VG,WV,1-784,VIN,VC,211,VIN,XCD,SAINTINCENT AND THE GRENADINES,2,East Caribbean Dollar,951,Yes,Kingstown,NA,.vc,en-VC/fr,3577815,V1,A/C/E/G/I/K,230,50 Hz
+St. Vincent & Grenadines,Saint Vincent and the Grenadines,Saint-Vincent-et-les Grenadines,VC,VCT,670,VCT,xm,VG,WV,1-784,VIN,VC,211,VIN,XCD,SAINTINCENT AND THE GRENADINES,2,East Caribbean Dollar,951,Yes,Kingstown,NA,.vc,en-VC/fr,3577815,V1,A/C/E/G/I/K,230,50 Hz
 Sudan,Sudan,Soudan,SD,SDN,729,SDN,sj,SU,SUD,249,SUD,SU,40764,SUD,SDG,SUDAN,2,Sudanese Pound,938,Yes,Khartoum,AF,.sd,ar-SD/en/fia,366755,V2,C/D,230,50 Hz
 Suriname,Suriname,Suriname,SR,SUR,740,SUR,sr,SM,SME,597,SUR,NS,233,SUR,SRD,SURINAME,2,Surinam Dollar,968,Yes,Paramaribo,SA,.sr,nl-SR/en/srn/hns/jv,3382998,V3,C/F,127,60 Hz
 Svalbard & Jan Mayen,Svalbard and Jan Mayen Islands,Îles Svalbard-et-Jan Mayen,SJ,SJM,744,NOR,,SZ,,47,,SV/JN,234,,NOK,SVALBARD AND JAN MAYEN,2,Norwegian Krone,578,Territory of NO,Longyearbyen,EU,.sj,no/ru,607072,L9,F,230,50 Hz
@@ -224,7 +224,7 @@ Turkey,Turkey,Turquie,TR,TUR,792,TUR,tu,TU,TR,90,TUR,TU,249,TUR,TRY,TURKEY,2,Tur
 Turkmenistan,Turkmenistan,Turkménistan,TM,TKM,795,TKM,tk,TR,TM,993,TKM,TX,250,TKM,TMT,TURKMENISTAN,2,Turkmenistan New Manat,934,Yes,Ashgabat,AS,.tm,tk/ru/uz,1218197,2E,B/C/F,220,50 Hz
 Turks & Caicos Islands,Turks and Caicos Islands,Îles Turques-et-Caïques,TC,TCA,796,TCA,tc,TI,,1-649,TCA,TK,251,TKS,USD,TURKS AND CAICOS ISLANDS,2,US Dollar,840,Territory of GB,Cockburn Town,NA,.tc,en-TC,3576916,W7,A/B,120,60 Hz
 Tuvalu,Tuvalu,Tuvalu,TV,TUV,798,TUV,tv,TV,,688,TUV,TV,252,TUV,AUD,TUVALU,2,Australian Dollar,36,Yes,Funafuti,OC,.tv,tvl/en/sm/gil,2110297,2G,I,220,50 Hz
-U.S.irgin Islands,United Statesirgin Islands,Îlesierges américaines,VI,VIR,850,VIR,vi,VI,USA,1-340,VIR,VQ,258,ISV,USD,VIRGIN ISLANDS (U.S.),2,US Dollar,840,Territory of US,Charlotte Amalie,NA,.vi,en-VI,4796775,,A/B,110,60 Hz
+U.S. Virgin Islands,United States Virgin Islands,Îlesierges américaines,VI,VIR,850,VIR,vi,VI,USA,1-340,VIR,VQ,258,ISV,USD,VIRGIN ISLANDS (U.S.),2,US Dollar,840,Territory of US,Charlotte Amalie,NA,.vi,en-VI,4796775,,A/B,110,60 Hz
 United Kingdom,United Kingdom of Great Britain and Northern Ireland,Royaume-Uni de Grande-Bretagne et d'Irlande du Nord,GB,GBR,826,G,xxk,UK,GB,44,ENG/NIR/SCO/WAL,UK,256,GBR,GBP,UNITED KINGDOM,2,Pound Sterling,826,Yes,London,EU,.uk,en-GB/cy-GB/gd,2635167,X0,G,230,50 Hz
 United States of America,United States of America,États-Unis d'Amérique,US,USA,840,USA,xxu,US,USA,1,USA,US,259,USA,USD,UNITED STATES,2,US Dollar,840,Yes,Washington,NA,.us,en-US/es-US/haw/fr,6252001,,A/B,120,60 Hz
 Uganda,Uganda,Ouganda,UG,UGA,800,UGA,ug,UG,EAU,256,UGA,UG,253,UGA,UGX,UGANDA,0,Uganda Shilling,800,Yes,Kampala,AF,.ug,en-UG/lg/sw/ar,226074,W9,G,240,50 Hz

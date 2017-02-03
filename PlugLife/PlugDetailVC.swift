@@ -16,6 +16,10 @@ class PlugDetailVC: UIViewController, UICollectionViewDelegate, UICollectionView
     
     var delegate : PlugDetailVCDelegate?
     
+    @IBOutlet weak var controlborder: UISegmentedControl!
+    
+    
+    @IBOutlet weak var xbuttonborder: UIButton!
     @IBOutlet weak var plugTypeLabel2: UILabel!
     @IBOutlet weak var plugTypeLabel: UILabel!
     @IBOutlet weak var groundedLabel: UILabel!
@@ -71,6 +75,17 @@ class PlugDetailVC: UIViewController, UICollectionViewDelegate, UICollectionView
     
     
     override func viewDidLoad() {
+        
+        controlborder.layer.borderWidth = 3
+        controlborder.layer.borderColor = UIColor.black.cgColor
+        controlborder.layer.cornerRadius = 4
+        controlborder.clipsToBounds = true
+        
+        xbuttonborder.layer.borderWidth = 3
+        xbuttonborder.layer.borderColor = UIColor.black.cgColor
+        xbuttonborder.layer.cornerRadius = 4
+        xbuttonborder.clipsToBounds = true
+        
         
         plugImage.layer.borderWidth = 3
         plugImage.layer.borderColor = UIColor.black.cgColor

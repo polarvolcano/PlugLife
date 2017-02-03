@@ -28,7 +28,7 @@ class AnimationVC: UIViewController {
     
     override func viewWillAppear(_ animated: Bool)
     {
-        self.glasses.center.x += view.bounds.width
+        //self.glasses.center.x += view.bounds.width
         self.plugLifetxt.center.y -= view.bounds.height
     }
 
@@ -43,9 +43,9 @@ class AnimationVC: UIViewController {
         self.centreImage.animationRepeatCount = 1
         self.centreImage.animationDuration = 2
         self.centreImage.startAnimating()
-        UIView.animate(withDuration: 2.0, delay: 2, animations: {
+        UIView.animate(withDuration: 1, delay: 2, animations: {
         //    self.centreImage.image = UIImage(named: "C2")
-                        self.glasses.center.x -= self.view.bounds.width
+                        //self.glasses.center.x -= self.view.bounds.width
                         self.plugLifetxt.center.y += self.view.bounds.height
         }, completion: { finished in
             self.performSegue(withIdentifier: "startSegue", sender: self)

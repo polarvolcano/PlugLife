@@ -47,8 +47,13 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
         searchBar.returnKeyType = UIReturnKeyType.done 
         parseCountryCSV()
-        currentCountry = countrylist.filter({$0.isoCode.range(of: baseLocale.regionCode!) != nil})[0]
         
+        let testifcountry = countrylist.filter({$0.isoCode.range(of: baseLocale.regionCode!) != nil})
+        if testifcountry.count == 1 {
+            currentCountry = testifcountry[0]
+        } else {
+            currentCountry = countrylist.filter({$0.isoCode.range(of: "US") != nil})[0]
+        }
         print(currentCountry.isoCode.lowercased())
 
         reloadCurrentCountry()
@@ -184,8 +189,17 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             let lower = searchBar.text!.lowercased()
 
             filteredCountries = countrylist.filter({$0.name.lowercased().range(of: lower) != nil})
+            
+            if filteredCountries.count > 0 && filteredCountries[0].isoCode != "AA" {
+                filteredCountries.insert(countrylist[0],at:0)
+                
+            } else if filteredCountries.count == 0 {
+                filteredCountries.append(countrylist[0])
+            }
+            
             collection.reloadData()
         }
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -200,6 +214,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
 
 
 }
+
 
 
 
