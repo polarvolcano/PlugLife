@@ -14,6 +14,7 @@ protocol PlugDetailVCDelegate {
 
 class PlugDetailVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UITableViewDelegate, UITableViewDataSource {
     
+    //delegate to handle passing of variable back to previous view countroller for changing the destination country without having to go back to the beginning screen
     var delegate : PlugDetailVCDelegate?
     
     @IBOutlet weak var controlborder: UISegmentedControl!
@@ -221,6 +222,7 @@ class PlugDetailVC: UIViewController, UICollectionViewDelegate, UICollectionView
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+        //sends new region back to previous view controller before removing self.
         self.delegate?.plugDetailVCSelectCountry(value: filteredCountries[indexPath.row])
         self.removeAnimate()
     }

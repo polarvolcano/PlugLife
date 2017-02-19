@@ -44,8 +44,6 @@ class AnimationVC: UIViewController {
         self.centreImage.animationDuration = 2
         self.centreImage.startAnimating()
         UIView.animate(withDuration: 1, delay: 2, animations: {
-        //    self.centreImage.image = UIImage(named: "C2")
-                        //self.glasses.center.x -= self.view.bounds.width
                         self.plugLifetxt.center.y += self.view.bounds.height
         }, completion: { finished in
             self.performSegue(withIdentifier: "startSegue", sender: self)

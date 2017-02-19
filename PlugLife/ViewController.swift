@@ -11,7 +11,7 @@ import UIKit
 
 class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UISearchBarDelegate {
     
-    var changeBaseCountrySwitch: Bool = false
+    var changeBaseCountrySwitch: Bool = false //whether or not we are selecting a destination or base region
     @IBAction func changeBaseCountry(_ sender: Any) {
         if changeBaseCountrySwitch == false {
             changeBaseCountrySwitch = true
@@ -48,6 +48,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         searchBar.returnKeyType = UIReturnKeyType.done 
         parseCountryCSV()
         
+        //searches for base region against CSV list. If does not exist, defaults to US
         let testifcountry = countrylist.filter({$0.isoCode.range(of: baseLocale.regionCode!) != nil})
         if testifcountry.count == 1 {
             currentCountry = testifcountry[0]
@@ -190,6 +191,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
 
             filteredCountries = countrylist.filter({$0.name.lowercased().range(of: lower) != nil})
             
+            //Always adds 'View All Plugs' to the beginning of the list if not already present
             if filteredCountries.count > 0 && filteredCountries[0].isoCode != "AA" {
                 filteredCountries.insert(countrylist[0],at:0)
                 

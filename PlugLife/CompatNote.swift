@@ -85,15 +85,19 @@ class CompatNote {
                         compat = true
                         
                     }
-                    if plugs == "A" && compatibleplug == "A" {
-                        compatType.append("plugWarn")
-                        infoText.append("Newer Type A plugs have a slightly wider pin and may be difficult to fit in any older Type A sockets in \(socket.name)")
-                        compat = true
-                    }
+                    
                 }
                 if compat == false {
                     compatType.append("plugX")
                     infoText.append("Your Type \(plugs) plugs are not compatible with the Type \(sockets) sockets in \(socket.name). An adapter is required.")
+                    
+                    
+                }
+                if plugs == "A" && sockets == "A" {
+                    compatType.append("plugWarn")
+                    infoText.append("Newer Type A plugs have a slightly wider pin and may be difficult to fit in any older Type A sockets in \(socket.name)")
+                    
+                    compat = true
                 }
                 
             }

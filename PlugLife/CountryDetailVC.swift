@@ -16,7 +16,6 @@ class CountryDetailVC: UIViewController,UIWebViewDelegate, UIScrollViewDelegate,
     var plugCompat = false
     var voltCompat = false
     var totalCompat = false
-    //var sendURL = String()
     var plugarray = [Plug]()
     
     func plugDetailVCSelectCountry(value: Country) {
@@ -28,17 +27,13 @@ class CountryDetailVC: UIViewController,UIWebViewDelegate, UIScrollViewDelegate,
         stackView.subviews.forEach({ $0.removeFromSuperview() })
         stackViewWidth.constant = 0
         
-        
         country = value
         loadData()
         self.tableView.reloadData()
         print(value.isoCode)
     }
     
- 
     @IBOutlet weak var backbtn: UIButton!
-    
-    
     
     let length: CGFloat = 200
     
@@ -57,7 +52,7 @@ class CountryDetailVC: UIViewController,UIWebViewDelegate, UIScrollViewDelegate,
         frequencyLbl.text = "Frequency: \(currentCountry.frequency)"
     }
 
-    
+    // This function and the function below handle when a user releases the press showing the base country stats
     @IBAction func hideBaseCountryStats(_ sender: Any) {
         nameLbl.text = country.name
         let img = UIImage(named: "\(country.isoCode.lowercased())")
@@ -91,7 +86,6 @@ class CountryDetailVC: UIViewController,UIWebViewDelegate, UIScrollViewDelegate,
     @IBAction func showPopup(sender: UIButton) {  //Launches a pop-up view which depends on the tag of the button pressed, the tag corresponds to an array of plugs, index at 'tag' is sent to the pop-up view controller
         
         print(sender.tag)
-        //let popOverVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "plugPopUp") as! PopUpViewController
         let popOverVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "plugDetail") as! PlugDetailVC
         popOverVC.stringPassed = self.plugarray[sender.tag]
         self.addChildViewController(popOverVC)
@@ -110,28 +104,30 @@ class CountryDetailVC: UIViewController,UIWebViewDelegate, UIScrollViewDelegate,
     
     override func viewDidLoad() {
         
-
-        let img = UIImage(named: "\(currentCountry.isoCode.lowercased())")
+        var img = UIImage(named: "\(currentCountry.isoCode.lowercased())")
         
         baseCountryFlag.setImage(img, for: .normal)
-        baseCountryFlag.layer.borderWidth = 3
-        baseCountryFlag.layer.borderColor = UIColor.black.cgColor
-        baseCountryFlag.layer.cornerRadius = 4
-        baseCountryFlag.clipsToBounds = true
+  
+        roundBlackCorners(view: baseCountryFlag, radius: 4, width: 3)
+        img = UIImage(named: "\(country.isoCode.lowercased())")
+        plugImg.image = img
         
+        nameLbl.text = country.name
+        plugTypesLbl.text = "Plug Types: \(country.plugType)"
+        
+        voltageLbl.text = "Voltage: \(country.voltage)"
+        frequencyLbl.text = "Frequency: \(country.frequency)"
         
         scrollView.delegate = self
-        
-
         
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
         
-        backbtn.layer.borderWidth = 3
-        backbtn.layer.borderColor = UIColor.black.cgColor
-        backbtn.layer.cornerRadius = 4
-        backbtn.clipsToBounds = true
+       
+        roundBlackCorners(view: backbtn, radius: 4, width: 3)
+        roundBlackCorners(view: infoView, radius: 4, width: 3)
+        roundBlackCorners(view: plugImg, radius: 4, width: 3)
 
     }
     
@@ -146,16 +142,8 @@ class CountryDetailVC: UIViewController,UIWebViewDelegate, UIScrollViewDelegate,
     func loadData() {
         self.plugarray.removeAll()
         let img = UIImage(named: "\(country.isoCode.lowercased())")
-        infoView.layer.borderWidth = 3
-        infoView.layer.borderColor = UIColor.black.cgColor
-        infoView.layer.cornerRadius = 4
-        infoView.clipsToBounds = true
-        
         plugImg.image = img
-        plugImg.layer.borderWidth = 3
-        plugImg.layer.borderColor = UIColor.black.cgColor
-        plugImg.layer.cornerRadius = 4
-        plugImg.clipsToBounds = true
+        
         
 
         let plugs = country.plugType.components(separatedBy: "/")
@@ -176,13 +164,6 @@ class CountryDetailVC: UIViewController,UIWebViewDelegate, UIScrollViewDelegate,
             let plug = Plug(plugType: homeplugs[i])
             self.plugarray.append(plug)
         }
-        
-        
-        
-        
-        
-        
-        
         
         nameLbl.text = country.name
         plugTypesLbl.text = "Plug Types: \(country.plugType)"
@@ -231,10 +212,8 @@ class CountryDetailVC: UIViewController,UIWebViewDelegate, UIScrollViewDelegate,
         let img = UIImage(named: "\(plug)2")
         let btn = UIButton()
         btn.setImage(img, for: .normal)
-        btn.layer.borderWidth = 3
-        btn.layer.borderColor = UIColor.black.cgColor
-        btn.layer.cornerRadius = 4
-        btn.clipsToBounds = true
+        roundBlackCorners(view: btn, radius: 4, width: 3)
+    
 
         btn.tag = index
         btn.addTarget(self, action: #selector(showPopup), for: UIControlEvents.touchUpInside)

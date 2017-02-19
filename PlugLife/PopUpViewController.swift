@@ -17,35 +17,35 @@ class PopUpViewController: UIViewController, UITableViewDelegate, UITableViewDat
     @IBOutlet weak var plugInfo: UITextView!
     var country = countrylist[0]
     var filteredCountries = [Country]()
-    //var filteredCountries = countrylist.filter({$0.plugType.lowercased().range(of: "A") != nil})
     
+    //initiates this variable, whose value is then passed from the previous view controller
     var stringPassed = Plug(plugType: "A")
-   // var pluginfo = Plug()
+  
     
 
     @IBAction func closePopUp(_ sender: Any) {
         self.removeAnimate()
     }
     override func viewDidLoad() {
-        //print(stringPassed)
+       
         tableView.delegate = self
         tableView.dataSource = self
         
         self.showAnimate()
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.black.withAlphaComponent(0.7)
-        //self.scrapeIEC()
+     
         
         print(country.currencyCode)
-        filteredCountries = countrylist.filter({$0.plugType.range(of: stringPassed.plugType) != nil}) //stringPassed.plugType
-        //tableView.reloadData()
+        filteredCountries = countrylist.filter({$0.plugType.range(of: stringPassed.plugType) != nil})
+     
 
-        // Do any additional setup after loading the view.
+       
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -76,7 +76,7 @@ class PopUpViewController: UIViewController, UITableViewDelegate, UITableViewDat
     });
     }
     
-    
+    //currently not used
     func scrapeIEC() {
         //print(stringPassed)
         
@@ -90,6 +90,7 @@ class PopUpViewController: UIViewController, UITableViewDelegate, UITableViewDat
         }
     }
     
+    //currently not used
     func parseHTML(html: String) -> Void {
         if let doc = Kanna.HTML(html: html, encoding: String.Encoding.utf8) {
             

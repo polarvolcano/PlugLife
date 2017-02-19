@@ -15,11 +15,9 @@ class CountryInfoVC: UIViewController {
         
         country.basecurrencyConvert {
             print("Arrived Here")
-            //self.updateUI()
-            //print(self.country.locale.currencyCode!)
+
         }
 
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
