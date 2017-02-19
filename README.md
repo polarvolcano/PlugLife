@@ -7,4 +7,7 @@ The data available online does not also reflect the reality on the ground, so ev
 The user's base country is selected based onthe device 'Locale.current', meaning the region settings of the phone itself rather than its physical geographical position (GPS)
 A user is able to change this base region once in the app. A view of all available regions is presented which the user can browse (UI CollectionView).
 
-On select, a new view controller is loaded displaying the plug types.
+On select, a new view controller is loaded displaying the plug types in a UIScrollView and recommendations pertaining to a user's home plugs are presented in a UITableView.
+
+On selecting any of the items in the ScrollView, a pop-up view controller is displayed with more information about the plug as as well as a list of other regions where the plug is used. The user can select any of these regions which will return to the previous view controller with the new region now being displayed. This can continue indefinitely. 
+
