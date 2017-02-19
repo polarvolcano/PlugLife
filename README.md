@@ -11,3 +11,4 @@ On select, a new view controller is loaded displaying the plug types in a UIScro
 
 On selecting any of the items in the ScrollView, a pop-up view controller is displayed with more information about the plug as as well as a list of other regions where the plug is used. The user can select any of these regions which will return to the previous view controller with the new region now being displayed. This can continue indefinitely. 
 
+On the App Store at https://itunes.apple.com/us/app/plug-life/id1200284392?ls=1&mt=8
